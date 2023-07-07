@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.barraNav {
+    background-color: #20619e;
+    width: 100%;
+    position: sticky;
+    top:0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.imagenNav {
+    width: 130px;
+
+}
+.barraNav ul{
+    margin: 0px 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.barraNav ul li a{
+    display: block;
+    color: #f15516;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:30px;
+    font-style: italic;
+    padding: 0px 20px;
+}
+.portadaInicio {
+    width: 100%;
+    height: 500px;
+    background-image: url(../multimedia/img/portada3.jpg);
+    background-size: cover;
+}
+.portadaInicio h1 {
+color: #f15516;
+font-size: 90px;
+font-weight: bold;
+text-align: justify;
+margin-left:15px;
+}
+.mainInicio {
+    background-color: #ada9a97a;
+}
+.inicioParrafo{
+    margin:0px 35px 10px 30px;
+    padding: 35px 25px;
+    font-size: 25px;
+    width: 75%;
+}
+.parrafoPalabraPrincipal{
+    color: #f15516;
+    font-weight: bold;
+}
+.tituloProductos{
+    margin: 20px 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.tark {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjetaProductos {
+    background-color: #d14e1a1f;
+    width:200px;
+    border: groove 4px #419ef5;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    
+}
+.tarjetaProductos h3 {
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+}
+.tarjetaProductos img{
+    width: 100%;
+}
+.tarjetaProductos button{
+    background-color: #f15516;
+    color: white;
+    padding: 3px 5px;
+    border: groove 3px #131212;
+    border-radius: 5px;
+}
+.emailNovedades{
+    width: 500px;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 30px;
+    height: 25px;
+    margin: 25px 0px 30px 10px;
+    padding:5px;
+}
+.botonEmailNovedades{
+    background-color: #f15516;
+    color: white;
+    padding: 7px 10px;
+    
+    margin: 0px;
+    border: groove 3px #131212;
+    border-radius: 25px;
+}
+.footer{
+    background-color: #20619e;
+}
+.textoFooter {
+margin:10px;
+padding:10px;
+color: aliceblue;
+}
+.textoFooter h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.textoFooter ul{
+list-style: none;
+}
+.textoFooter ul li{
+    margin-bottom: 8px;
+}
+.redes{
+    font-size: 50px;
+    width: 100%;
+}
+.redes i{
+    color: #f15516;
+    padding-left: 30px;
+}
+.mainContacto{
+    background-color: #ada9a97a;
+}
+.portadaContacto{
+    width: 100%;
+    height: 400px;
+    background-image: url(../multimedia/img/portada1.jpg);
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.portadaContacto h1 {
+    font-size: 90px;
+    color: #f15516;
+    text-align: justify;
+    margin-left:15px;
+    font-weight: bold;
+}
+.tarjetaContacto{
+    margin-left: 30px;
+    width: 600px;
+}
+.tarjetaContacto ul li{
+    padding-bottom: 10px;
+    list-style: inside;
+    font-size: 20px;
+}
+.tarjetaContacto em{
+font-weight: bold;
+}
+.tarjetaContacto iframe {
+    margin: 20px 30px 60px;
+    border-radius: 10px;
+
+}
+.tarjetaConsulta {
+    background-color: #b7beba3a;
+    border: groove 4px #419ef5;
+    margin:15px 15px 5px;
+    margin-left: 150px;
+    padding: 10px;
+    padding-left:25px;
+    width: 330px;
+    border-radius: 10px;
+}   
+.tarjetaConsulta h2 {
+    color: #f15516;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.tarjetaConsulta ul li{
+    padding: 10px;
+    list-style: none;
+
+}
+.tarjetaConsulta em {
+    font-weight: bold;
+    font-size:15px;
+}
+.inputContacto {
+border: solid 1px;
+border-radius: 5px;
+width: 90%;
+padding:5px;
+margin-top: 10px
+}
+.tarjetaConsulta button{
+    background-color: #f15516;
+    color: white;
+    padding: 3px 5px;
+    margin: 10px 5px;
+    border: groove 3px #131212;
+    border-radius: 5px;
+}   
+.mainNosotros {
+    background-color: #ada9a97a;
+}
+.portadaNosotros{
+    width: 100%;
+    height: 400px;
+    background-image: url(../multimedia/img/portada.jpg);
+    background-size: cover;
+    margin-bottom: 50px;
+
+}
+.portadaNosotros h1{
+    font-size: 90px;
+    color: #f15516;
+    text-align: justify;
+    margin-left:15px;
+    font-weight: bold;
+}
+.tarjetaNosotros {
+    width: 800px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.tarjetaNosotrosParrafo {
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+.tarjetaNosotrosPunteo {
+    padding: 0px 10px;
+    list-style: inside;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.fotoCollage {
+    width: 100%;
+    margin:20px 0px;
+}
