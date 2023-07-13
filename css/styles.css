@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     top:0;
-    z-index: 1;
+    z-index: 100;
 }
 .barraNav__menu{
     display: none;
@@ -48,6 +48,29 @@
     color: #f15516 !important; 
 }
 /*fin navegador*/
+/*inicio boton flotante whatsapp*/
+.botonFlotante{
+    position: fixed;
+    width: 80px;
+    height:80px;
+    line-height: 80px;
+    background-color: #0df053;
+    color: white;
+    bottom: 30px;
+    right:40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 0px 1px 10px black;
+    z-index: 100;
+}
+.botonFlotante:hover{
+    background-color:white;
+    color:#0df053;
+}
+/*fin boton flotante whatsapp*/
+
+/*INICIO INDEX*/
 /*inicio portada index*/
 .portadaInicio {
     width: 100%;
@@ -68,6 +91,7 @@ text-shadow: 2px 2px 2px #000000;
 }
 /*fin portada index*/
 
+/*inicio parrafo index*/
 .inicioParrafo{
     margin:30px 20px;
     padding: 35px 25px 20px;
@@ -78,6 +102,8 @@ text-shadow: 2px 2px 2px #000000;
     color: #f15516;
     font-weight: bold;
 }
+/*fin parrafo index*/
+
 /*inicio productos*/
 .tituloProductos{
     margin-bottom: 50px;
@@ -86,10 +112,6 @@ text-shadow: 2px 2px 2px #000000;
     text-align: center;
 }
 .tarjetas__productos {
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr;
@@ -123,7 +145,7 @@ text-shadow: 2px 2px 2px #000000;
 }
 .tarjetaProductos button{
     background-color: #f15516;
-    color: black;
+    color: white;
     font-size: 14px;
     font-weight: bolder;
     padding: 5px;
@@ -133,10 +155,12 @@ text-shadow: 2px 2px 2px #000000;
     transition: 0.4s;
 }
 .tarjetaProductos button:hover{
-    color: white;
+    color: black;
     background-color: #f13716;
 }
 /*fin productos*/
+
+/*inicio novedades*/
 .divNovedades {
 display: flex;
 flex-wrap: wrap;
@@ -160,17 +184,18 @@ justify-content: center;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-weight: bolder;
-    color: black;
+    font-weight: bold;
+    color: white;
     transition: 0.4s;
     cursor:pointer
 }
 .botonEmailNovedades:hover{
-    color: white;
+    color: black;
     background-color: #f13716;
 }
-/*inicio footer*/
+/*fin novedades*/
 
+/*inicio footer*/
 .footer{
     background-color: #20619e;
     display: grid;
@@ -228,7 +253,10 @@ color: aliceblue;
     color: #f15516;
 }
 /*fin footer*/
+/*FIN INDEX*/
 
+/*INICIO ALQUILERES*/
+/*inicio portada alquileres*/
 .barraNav__alquileres {
     color: #f15516 !important;
 }
@@ -251,6 +279,9 @@ color: aliceblue;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000000;
 }
+/*fin portada alquileres*/
+
+/*inicio tarjeta alquileres*/
 .divAlquileres{
     display: grid;
     grid-template-columns: 1fr;
@@ -263,6 +294,9 @@ color: aliceblue;
     margin: 50px 60px;
     border-radius: 10px;
 }
+.tarjetaAlquileres:hover{
+    background-color: #413f3f49 ;
+}
 .tarjetaAlquileres__titulo{
     text-align: center;
     font-weight: bold;
@@ -274,8 +308,11 @@ color: aliceblue;
    text-align: start;
    list-style: inside ;
    padding: 20px;
-   font-size: 24px;
+   font-size: 18px;
 }
+/*fin tarjeta alquileres*/
+
+/*inicio carrousel*/
 .divCarrousel{
     justify-self: normal;
     margin-bottom: 40px;
@@ -287,7 +324,7 @@ color: aliceblue;
     margin: 40px 0px;
 }
 .carrousel img{
-    height: 400px;
+    height: 600px;
     width: 100%;
     object-fit: cover;
 }
@@ -299,6 +336,11 @@ color: aliceblue;
     font-size: 25px;
     text-shadow: 2px 2px 2px #000000;
 }
+/*fin carrousel*/
+/*FIN ALQUILERES*/
+
+/*INICIO NOSOTROS*/
+/*inicio portada nosotros*/
 .barraNav__nosotros {
     color: #f15516 !important;
 }
@@ -322,18 +364,35 @@ color: aliceblue;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000000;
 }
+/*fin portada nosotros*/
+
+/*inicio tarjeta nosotros*/
+.divNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
 .tarjetaNosotros {
     width: 800px;
-    margin-left: 30px;
-    font-size: 20px;
+    font-size: 18px;
+    border: 4px groove #419ef5;
+    border-radius: 10px;
+    padding: 30px;
 }
-.tarjetaNosotrosParrafo {
-    padding: 0px 10px;
-    margin-bottom: 20px;
+.tarjetaNosotros:hover{
+    background-color: #413f3f49 ;
+   
+}
+.tarjetaNosotros__titulo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.tarjetaNosotros__Parrafo {
     line-height: 35px;
 }
-.tarjetaNosotrosPunteo {
-    padding: 0px 10px;
+.tarjetaNosotros__Punteo {
     list-style: inside;
     line-height: 35px;
     margin-bottom: 30px;
@@ -342,6 +401,11 @@ color: aliceblue;
     width: 100%;
     margin:20px 0px;
 }
+/*fin tarjeta nosotros*/
+/*FIN NOSOTROS*/
+
+/*INICIO CONTACTO*/
+/*inicio portada contacto*/
 .barraNav__contacto {
     color: #f15516 !important;
 }
@@ -363,6 +427,9 @@ color: aliceblue;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000000;
 }
+/*fin portada nosotros*/
+
+/*inicio tarjeta datos contacto*/
 .divTarjetasContacto{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -373,7 +440,6 @@ color: aliceblue;
 .datosContacto{
     width: 550px;
     margin: 15px;
-    background-color: #b7beba3a;
     border: groove 4px #f13716;
     border-radius: 10px;
 }
@@ -401,10 +467,11 @@ font-weight: bold;
     height: 300px;
 
 }
+/*fin tarjeta datos contacto*/
+
 /*inicio formulario*/
 .tarjetaConsulta {
     display: inline-block;
-    background-color: #b7beba3a;
     border: groove 4px #419ef5;
     margin:15px 50px;
     padding: 10px;
@@ -444,31 +511,33 @@ font-weight: bold;
     outline:none;
     border-bottom:2px solid #fa0909;
 }
-.solo{
+.labinp__solo{
     grid-column: 1/3;
 }
 .inputMensaje{
     width: 95%;
 }
-.formulario__boton button{
+.formulario__boton {
     background-color: #f15516;
-    color: black;
+    color: white;
     font-weight: bolder;
     height: 40px;
     padding: 3px 0px;
-    margin: 10px 0px;
+    margin: 20px 0px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 97%;
     transition: 0.4s;
 }  
-.formulario__boton button:focus, .formulario__boton button:hover{
-    color: white;
+.formulario__boton:focus, .formulario__boton:hover{
+    color: black;
     background-color: #f13716;
 }
-
 /*fin formulario*/
+/*FIN CONTACTO*/
+
+/*inicio media queries*/
 @media(max-width:1200px) {
     .barraNav{
         position: static;
@@ -528,6 +597,15 @@ font-weight: bold;
         color: black;
 
     }
+    .tarjetaAlquileres{
+        width: 80%;
+    }
+    .carrousel img{
+        height: 400px;
+    }
+    .tarjetaNosotros{
+        width:80%;
+    }
     .divTarjetasContacto{
         grid-template-columns: 1fr;
     }
@@ -547,7 +625,7 @@ font-weight: bold;
         row-gap: 20px;
 
     }
-    .solo{
+    .labinp__solo{
         grid-column: 1/1;
     }
     .inputContacto{
@@ -555,12 +633,69 @@ font-weight: bold;
     }
 } 
 @media(max-width:768px){
-    .emailNovedades{
-        width:320px;
+    .botonFlotante{
+        width: 50px;
+        height:50px;
+        line-height: 50px;
+        font-size: 35px;
+       
     }
+    .inicioParrafo{
+        font-size: 14px;
+    }
+    .emailNovedades{
+        width:300px;
+        font-size: 14px;
+    }
+    .botonEmailNovedades{
+        font-size: 14px;
+        height: 38px;    }
     .textoFooter{
         grid-column: 1/3;
     }
-
+    .tarjetaAlquileres__titulo{
+        font-size: 20px;
     }
+    .tarjetaAlquileres__lista{
+        font-size: 14px;
+    }
+    .divCarrousel__titulo{
+        font-size: 20px;
+    }
+    }
+@media(max-width:576px){
+    .portadaInicio h1, .portadaAlquileres h1, .portadaNosotros h1, .portadaContacto h1{
+        font-size: 60px;
+    }
+    .tituloProductos{
+        font-size: 20px;
+    }
+    .tarjetaProductos {
+        width:175px;
+    }
+    .tarjetaProductos h3{
+        font-size: 14px;
+    }
+    .tarjetaProductos button{
+        font-size: 14px;
+    }
+    .datosContacto__titulo{
+        font-size: 20px;
+    }
+    .datosContacto ul li{
+        font-size: 14px;
+    }
+    .tajetaConsulta h2{
+        font-size: 20px;
+    }
+    .formulario {
+        font-size: 14px;
+    }
+    .formulario__boton{
+        font-size: 16px;
+    }
+}
+/*fin media queries*/
+
+
 
