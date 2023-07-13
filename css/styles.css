@@ -115,7 +115,6 @@ text-shadow: 2px 2px 2px #000000;
 .tarjetas__productos {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 1fr;
     justify-items: center;
 }
 .tarjetaProductos {
@@ -686,8 +685,8 @@ font-weight: bold;
     .tituloProductos{
         font-size: 20px;
     }
-    .tarjetaProductos {
-        width:150px;
+    .tarjetas__productos {
+        grid-template-columns: 1fr;
     }
     .tarjetaProductos h3{
         font-size: 14px;
