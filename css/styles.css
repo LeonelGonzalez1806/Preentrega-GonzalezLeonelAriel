@@ -282,11 +282,7 @@ color: aliceblue;
 /*fin portada alquileres*/
 
 /*inicio tarjeta alquileres*/
-.divAlquileres{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
+
 .tarjetaAlquileres{
     width:768px;
     border: 4px groove #419ef5;
@@ -305,16 +301,15 @@ color: aliceblue;
 .tarjetaAlquileres__lista{
     display:flex;
     flex-direction: column;
-   text-align: start;
-   list-style: inside ;
-   padding: 20px;
-   font-size: 18px;
+    text-align: start;
+    list-style: inside ;
+    padding: 20px;
+    font-size: 18px;
 }
 /*fin tarjeta alquileres*/
 
 /*inicio carrousel*/
 .divCarrousel{
-    justify-self: normal;
     margin-bottom: 40px;
 }
 .divCarrousel__titulo{
@@ -367,11 +362,7 @@ color: aliceblue;
 /*fin portada nosotros*/
 
 /*inicio tarjeta nosotros*/
-.divNosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
+
 .tarjetaNosotros {
     width: 800px;
     font-size: 18px;
