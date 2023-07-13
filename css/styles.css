@@ -439,7 +439,7 @@ color: aliceblue;
 }
 .datosContacto{
     width: 550px;
-    margin: 15px;
+    margin: 15px 0px;
     border: groove 4px #f13716;
     border-radius: 10px;
 }
@@ -504,8 +504,7 @@ font-weight: bold;
     padding:5px;
     cursor: pointer;
     width:90%;
-    padding-top: 15px;
-    
+    padding-top: 15px;    
 }
 .inputContacto:focus,.inputContacto:hover{
     outline:none;
@@ -563,6 +562,9 @@ font-weight: bold;
     }
     .tarjetaConsulta{
         width: 350px;
+    }
+    .inputContacto{
+        font-size: 14px;
     }
 }
 @media(max-width:992px) {
