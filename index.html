@@ -7,11 +7,13 @@
     <title>Ortopedia Belgrano </title>
     <link rel="shortcut icon" href="./multimedia/img/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>   
 <body>
     <header>
         <nav class="barraNav">
+        <i class="barraNav__menu fa-solid fa-bars"></i>
             <ul >
                 <li> <a class= "barraNav__inicio" href="./index.html">Inicio</a></li>
                 <li> <a href="./pages/alquileres.html">Alquileres</a></li>
@@ -24,19 +26,13 @@
             <h1>ORTOPEDIA BELGRANO</h1>
         </div>
     </header>
-    <main class="mainInicio">
+    <main class="container mainPrincipal">
         <div class="inicioParrafo">
-            <p>
-                Bienvenido a <em class="parrafoPalabraPrincipal">Ortopedia Belgrano</em>, brindamos servicios desde 1989 al servicio de nuestros
-                clientes. Ponemos a su disposición una amplia gama de productos ortopedicos que permiten
-                la recuperación de las personas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam repellat
-                praesentium ab iure necessitatibus quaerat pariatur id? Veritatis aut veniam quam, ratione
-                magnam perspiciatis id reprehenderit molestias officia, maxime tempore.
-
-            </p>
+            <p>Pensando en su bienestar y calidad de vida, en <em class="parrafoPalabraPrincipal">Ortopedia Belgrano</em> nos enorgullece ofrecer un servicio integral y personalizado desde 1989. Nuestro compromiso se basa en brindar soluciones ortopédicas de última generación, diseñadas para promover la recuperación y mejorar la movilidad de nuestros valiosos clientes. Contamos con un amplio catálogo de productos ortopédicos de alta calidad, cuidadosamente seleccionados para adaptarse a las necesidades individuales de cada persona. </p>
+            <p>Ya sea que esté buscando aparatos ortopédicos, prótesis, ayudas técnicas o asesoramiento profesional, nuestro equipo altamente capacitado está aquí para ofrecerle la atención personalizada que se merece. Su bienestar es nuestra prioridad, y trabajamos incansablemente para ayudarle a recuperar su independencia y disfrutar de una vida activa y plena. ¡Bienvenido a <em class="parrafoPalabraPrincipal">Ortopedia Belgrano</em>, donde la salud y el bienestar se encuentran en cada paso!</p>
         </div>
-        <div class="tituloProductos">
-            <h2>Nuestros productos:</h2>
+        <div class="divProductos">
+            <h2 class="tituloProductos">Nuestros productos:</h2>
         </div>
         <div class="tarjetas__productos">
             <div class="tarjetaProductos">
@@ -82,24 +78,34 @@
         </div>
         <div class="divNovedades">
             <form action="">
-                <input class="emailNovedades" type="email" name="email" id="email" placeholder="Ingrese su email para recibir novedades y promociones..." required>
+                <input class="emailNovedades" type="email" name="email" id="email" placeholder="Ingrese su email para recibir novedades..." required>
                     <button class="botonEmailNovedades" type="submit">Enviar</button>
             </form>
         </div>
     </main>
     <footer class="footer">
-        <div class="textoFooter">
-            <h4>Contactanos</h4>
+        <div class="textoFooter descripcion">
+            <h4>ORTOPEDIA BELGRANO</h4>
+            <img class="logoFooter"src="./multimedia/img/logo.png" alt="logo"> 
+            <p>Soluciones ortopédicas desde 1989. Amplia gama de productos de alta calidad para la recuperación y mejora de la movilidad. Expertos en aparatos ortopédicos, prótesis y ayudas técnicas. </p>
+            <p>Contamos con productos para cuidar su salud, tanto para alquilar, como para vender. Tu bienestar es nuestra prioridad.</p>
+        </div>
+        <div class="textoFooter contactenos">
+            <h4>DATOS DE CONTACTO</h4>
                     <span>Camino general belgrano 1021, Lanús, Gba.</span>
                     <span>15-3056-2592</span>
                     <span>Ortopedia-belgrano-ln@gmail.com</span>
                     <span>Lunes a viernes de 11 a 17hs.</span>
         </div>
-        <div class="redes">
-            <a href="https://www.whatsapp.com/ortopedia.belgrano/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/ortopedia.belgrano/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/ortopedia.belgrano/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+        <div class="redes textoFooter">
+            <h4>REDES SOCIALES</h4>
+                <div class="redesLogos">
+                <a href="https://www.facebook.com/ortopedia.belgrano/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ortopedia.belgrano/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.gmail.com/ortopedia.belgrano/" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
