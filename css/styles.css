@@ -613,10 +613,10 @@ font-weight: bold;
     }
     .divTarjetasContacto{
         grid-template-columns: 1fr;
+        justify-items: center;
     }
     .datosContacto{
         width:80%;
-        margin-left: 50px;
     }
     .datosContacto iframe {
         width: 90%;
@@ -689,9 +689,6 @@ font-weight: bold;
     }
     .tarjetas__productos {
         grid-template-columns: 1fr;
-    }
-    .tarjetaProductos h3{
-        font-size: 14px;
     }
     .tarjetaProductos button{
         font-size: 14px;
