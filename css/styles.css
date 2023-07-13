@@ -94,8 +94,8 @@ text-shadow: 2px 2px 2px #000000;
 
 /*inicio parrafo index*/
 .inicioParrafo{
-    margin:30px 20px;
-    padding: 35px 25px 20px;
+    margin:30px 0px 30px 20px;
+    padding: 20px 0px 20px 25px;
     font-size: 18px;
     line-height: 40px;
 }
@@ -379,6 +379,7 @@ color: aliceblue;
     border: 4px groove #419ef5;
     border-radius: 10px;
     padding: 30px;
+    margin-bottom: 25px;
 }
 .tarjetaNosotros:hover{
     background-color: #413f3f49 ;
@@ -396,7 +397,6 @@ color: aliceblue;
 .tarjetaNosotros__Punteo {
     list-style: inside;
     line-height: 35px;
-    margin-bottom: 30px;
 }
 .fotoCollage {
     width: 100%;
@@ -646,6 +646,7 @@ font-weight: bold;
     }
     .inicioParrafo{
         font-size: 14px;
+        line-height: 20px;
     }
     .emailNovedades{
         width:300px;
@@ -653,7 +654,8 @@ font-weight: bold;
     }
     .botonEmailNovedades{
         font-size: 14px;
-        height: 38px;    }
+        height: 38px;   
+     }
     .textoFooter{
         grid-column: 1/3;
     }
@@ -665,6 +667,13 @@ font-weight: bold;
     }
     .divCarrousel__titulo{
         font-size: 20px;
+    }
+    .tarjetaNosotros__titulo{
+        font-size: 20px;
+    }
+    .tarjetaNosotros__Parrafo, .tarjetaNosotros__Punteo{
+        font-size: 14px;
+        list-style: disc;
     }
     }
 @media(max-width:576px){
@@ -678,7 +687,7 @@ font-weight: bold;
         font-size: 20px;
     }
     .tarjetaProductos {
-        width:175px;
+        width:150px;
     }
     .tarjetaProductos h3{
         font-size: 14px;
@@ -686,8 +695,28 @@ font-weight: bold;
     .tarjetaProductos button{
         font-size: 14px;
     }
+    .emailNovedades{
+        width:250px;
+        font-size: 12px;
+    }
+    .botonEmailNovedades{
+        font-size: 12px;
+        height: 36px;   
+    }
+    .tarjetaAlquileres__lista{
+        padding:10px 0px;
+    }
     .carrousel img{
         height: 250px;
+    }
+    .tarjetaNosotros{
+        padding: 20px;
+    }
+    .tarjetaNosotros__Parrafo {
+        line-height: 20px;
+    }
+    .tarjetaNosotros__Punteo{
+        line-height: 20px;
     }
     .datosContacto__titulo{
         font-size: 20px;
@@ -695,7 +724,7 @@ font-weight: bold;
     .datosContacto ul li{
         font-size: 14px;
     }
-    .tajetaConsulta h2{
+    .tarjetaConsulta h2{
         font-size: 20px;
     }
     .formulario {
