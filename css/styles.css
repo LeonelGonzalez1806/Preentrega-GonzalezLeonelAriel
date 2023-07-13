@@ -48,6 +48,7 @@
     color: #f15516 !important; 
 }
 /*fin navegador*/
+
 /*inicio boton flotante whatsapp*/
 .botonFlotante{
     position: fixed;
@@ -597,11 +598,14 @@ font-weight: bold;
         color: black;
 
     }
+    .portadaInicio, .portadaAlquileres, .portadaNosotros, .portadaContacto {
+        height: 350px; 
+    }
     .tarjetaAlquileres{
         width: 80%;
     }
     .carrousel img{
-        height: 400px;
+        height: 350px;
     }
     .tarjetaNosotros{
         width:80%;
@@ -664,6 +668,9 @@ font-weight: bold;
     }
     }
 @media(max-width:576px){
+    .portadaInicio, .portadaAlquileres, .portadaNosotros, .portadaContacto {
+        height: 250px; 
+    }
     .portadaInicio h1, .portadaAlquileres h1, .portadaNosotros h1, .portadaContacto h1{
         font-size: 60px;
     }
@@ -678,6 +685,9 @@ font-weight: bold;
     }
     .tarjetaProductos button{
         font-size: 14px;
+    }
+    .carrousel img{
+        height: 250px;
     }
     .datosContacto__titulo{
         font-size: 20px;
