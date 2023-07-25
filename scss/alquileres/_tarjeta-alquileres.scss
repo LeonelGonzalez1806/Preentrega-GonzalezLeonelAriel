@@ -1,0 +1,31 @@
+.tarjetaAlquileres{
+    width:768px;
+    border: outline;
+    padding:20px;
+    background: rgb(65,158,245);
+    background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
+    margin: 50px 60px;
+    border-radius: 10px;
+    &:hover{
+        background-color: $bg-color-hover ;
+    }
+    @media(max-width:992px){
+            width: 80%;
+    }
+    .tarjetaAlquileres__titulo{
+        text-align: center;
+        font-weight: bold;
+        font-size: $font-titulo;
+        margin-bottom: 30px;
+    }
+        .tarjetaAlquileres__lista{
+            font-size: $font-texto;
+            color: black;
+            line-height: $interlineado-parrafo;
+            
+        }
+    
+}
+
+
+

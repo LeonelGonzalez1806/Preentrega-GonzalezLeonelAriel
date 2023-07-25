@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "reset";
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "./nav-portadas-footer-botonwsp/navegador";
+@import "./nav-portadas-footer-botonwsp/boton-flotante-whatsapp";
+@import "./nav-portadas-footer-botonwsp/portadas";
+@import "./index/parrafo-principal-index";
+@import "./index/tarjetas-productos";
+@import "./index/email-novedades";
+@import "./nav-portadas-footer-botonwsp/footer";
+@import "./alquileres/tarjeta-alquileres";
+@import "./alquileres/carrousel-alquileres";
+@import "./nosotros/tarjeta-nosotros";
+@import "./nosotros/collage-nosotros";
+@import "./contacto/tarjetas-contacto.scss";
+@import "./contacto/tarjeta-datos-contacto";
+@import "./contacto/tarjeta-formulario";
+
+
+
+

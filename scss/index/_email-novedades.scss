@@ -1,0 +1,40 @@
+.divNovedades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .emailNovedades{
+        width: 600px;
+        text-align: center;
+        font-size: 14px;
+        border: solid 1px $bg-color;
+        border-radius: 5px;
+        height: 35px;
+        margin: 25px 5px 30px 0px;
+        padding:5px;
+        outline: none;
+        &:hover{
+            border: 1px solid $color;
+        }
+        @media(max-width:768px){
+                width:300px;
+        }
+        @media(max-width:576px){
+                width:270px;
+        }
+    }
+    .botonEmailNovedades{
+        @include boton (16px,none,none,0px 5px,10px);
+       
+       
+        @media(max-width:768px){
+            height: 38px;   
+        }
+        @media(max-width:576px){
+            height: 36px;   
+        }
+    }
+    
+    
+    
+    

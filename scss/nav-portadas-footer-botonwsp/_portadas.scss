@@ -1,0 +1,84 @@
+.portadaInicio {
+    @extend %img-portada;
+    background-image: url(../multimedia/img/nadie-sala-silla-ruedas-muletas-ayudar-transporte-espacio-vacio-equipo-apoyo-marcha-dar-ayuda-personas-discapacidad-cronica-movilidad-fisica.jpg);
+    @media(max-width:1200px){
+            margin-top:0px;
+        }
+    @media(max-width:992px){
+            height: 350px; 
+        }
+    @media(max-width:576px){
+            height: 250px; 
+        }
+    h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 2px #000000;
+        }
+}
+.portadaAlquileres {
+    @extend %img-portada;
+    background-image: url(../multimedia/img/mujer-tiro-completo-hombre-discapacitado-viajando.jpg);
+    
+    @media(max-width:1200px){
+            margin-top:0px;
+        }
+    @media(max-width:992px){
+            height: 350px; 
+        }
+    @media(max-width:576px){
+            height: 250px; 
+        }
+    h1 {
+        font-size: 60px;
+        color: white;
+        text-align: justify;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #000000;
+    }
+}
+.portadaNosotros{
+    @extend %img-portada;
+    background-image: url(../multimedia/img/persona-discapacitada-que-viaja-ciudad.jpg);
+    @media(max-width:1200px){
+            margin-top:0px;
+        }
+    @media(max-width:992px) {
+            height: 350px; 
+        }
+    @media(max-width:576px){
+            height: 250px; 
+        }
+    h1{
+        font-size: 60px;
+        color: white;
+        text-align: justify;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #000000;
+    }
+}
+.portadaContacto{
+    @extend %img-portada;
+    background-image: url(../multimedia/img/mujer-joven-practicando-ejercicio-sesion-fisioterapia.jpg);
+    @media(max-width:1200px){
+            margin-top:0px;
+        }
+    @media(max-width:992px){
+            height: 350px; 
+        }
+    @media(max-width:576px){
+            height: 250px; 
+        }
+    h1 {
+        font-size: 60px;
+        color: white;
+        text-align: justify;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #000000;
+    }
+}
+
+
+

@@ -1,0 +1,51 @@
+.datosContacto{
+    width: 500px;
+    margin: 15px 0px;
+    border: outline;
+    background: rgb(65,158,245);
+    background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
+    border-radius: 10px;
+    &:hover{
+        background-color: $bg-color-hover;
+    }
+    @media(max-width:1200px){
+            width:400px;  
+    }
+    @media(max-width:992px){
+            width:80%;
+    }
+    .datosContacto__titulo{
+        font-weight: bold;
+        font-size: $font-titulo;
+        padding:10px 0px;
+        text-align: center;
+        @media(max-width:576px){
+                font-size: 20px;
+            }
+    }
+    ul li{
+        padding: 20px 15px 20px 0px;
+        list-style: inside;
+        font-size: $font-texto;
+        span{
+            font-weight: bold;
+            }
+    }
+    iframe {
+        margin:20px;
+        border-radius: 10px;
+        width: 450px;
+        height: 300px;
+        @media(max-width:1200px){
+                width:90%;
+                height: 300px;
+        }
+        @media(max-width:992px){
+                width: 90%;
+        } 
+    }
+}
+
+
+
+    

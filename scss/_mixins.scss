@@ -1,0 +1,18 @@
+@mixin boton ($font,$height,$width, $margin, $padding){
+   
+        background-color: $color;
+        color: white;
+        font-size: $font;
+        height: $height;
+        width: $width;
+        font-weight: bolder;
+        border: none;
+        border-radius: 5px;
+        cursor:pointer;
+        transition: 0.4s;
+        margin: $margin;
+        padding: $padding;
+        &:hover, &:focus{
+            color: black;
+        }
+}

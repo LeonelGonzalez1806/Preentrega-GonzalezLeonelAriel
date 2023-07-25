@@ -1,0 +1,53 @@
+.tarjetaNosotros {
+    width: 800px;
+    border: outline;
+    background: rgb(241,85,22);
+    background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 30px;
+    margin: 50px;
+    &:hover{
+        background-color: $bg-color-hover ;
+    }
+    @media(max-width:992px){
+            width:80%;
+    }
+    @media(max-width:576px){
+            padding: 20px;
+    }
+    .tarjetaNosotros__titulo{
+        font-size: $font-titulo;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+        @media(max-width:768px){
+                font-size: 20px;
+            }
+    }
+    .tarjetaNosotros__Parrafo {
+        line-height: $interlineado-parrafo;
+        @media(max-width:576px){
+                line-height: 30px;
+            }
+        }
+        
+    .tarjetaNosotros__Punteo {
+        list-style: inside;
+        line-height: $interlineado-parrafo;
+        
+        @media(max-width:768px){
+            list-style: disc;
+        }
+        
+    }
+  
+}
+
+
+
+
+
+
+
+

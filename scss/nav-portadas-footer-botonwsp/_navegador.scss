@@ -1,0 +1,73 @@
+.barraNav {
+    background-color: $bg-color;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    z-index: 100;
+    @media(max-width:1200px) {
+        position: static;
+    }
+    .imagenNav{
+        width: 100px;
+    }
+    .barraNav__menu{
+        display: none;
+        @media(max-width:992px){
+            display: block;
+            font-size: 50px;
+            color: white;
+            order:-1;
+            margin: 15px 20px;
+            &:hover + ul{
+                left:0px;
+            }
+        }
+    }
+        ul{
+            margin: 0px 15px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @media(max-width:992px){
+                position: fixed;
+                background-color: black;
+                border-radius: 10px;
+                width: 75vw;
+                height: 100vh;
+                top:0;
+                margin: 0px;
+                left: -1000px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                transition: 0.5s;
+                &:hover{
+                    left:0px;
+                }
+            }
+            li a{
+                display: block;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size:30px;
+                padding: 0px 20px;
+                transition: 0.4s;
+                &:hover {
+                    color: $color;  
+                    text-shadow: none;
+                }
+                @media(max-width:992px){
+                    color: white;
+                }
+            }
+            .barraNav__inicio, .barraNav__alquileres, .barraNav__nosotros, .barraNav__contacto{
+                color: $color; 
+            }
+        }   
+}

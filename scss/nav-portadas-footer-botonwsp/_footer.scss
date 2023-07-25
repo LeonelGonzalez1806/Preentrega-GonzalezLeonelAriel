@@ -1,0 +1,72 @@
+.footer{
+    background-color: $bg-color;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    @media(max-width:1200px){
+            grid-template-columns: 1fr 1fr;
+    }
+    .textoFooter {
+        margin:10px;
+        color: aliceblue;
+        @media(max-width:768px){
+            grid-column: 1/3;
+        }
+        h4{
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    }
+    .descripcion {
+        padding: 0px 30px;
+        .logoFooter {
+            float:left;
+            width:90px;
+            height:60px;
+            
+        }
+    }
+    .contactenos{
+        align-self: start;
+        span{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 10px 10px 10px 10px;
+        }
+    }
+
+    .redes{
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @each $clave, $valor in $redes{
+            .#{$clave} {
+                color: $valor;
+            }
+        }
+        @media(max-width:1200px){
+                grid-column: 1/3;
+        }
+        i{
+       
+            font-size: 50px;
+            color: white;
+            padding: 25px;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

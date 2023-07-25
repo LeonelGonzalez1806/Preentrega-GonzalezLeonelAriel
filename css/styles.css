@@ -1,729 +1,742 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
-/*inicio navegador*/
+
+.portadaContacto, .portadaNosotros, .portadaAlquileres, .portadaInicio {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .barraNav {
-    background-color: #20619e;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    top:0;
-    z-index: 100;
+  background-color: #20619e;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 100;
 }
-.barraNav__menu{
-    display: none;
+@media (max-width: 1200px) {
+  .barraNav {
+    position: static;
+  }
 }
-.imagenNav {
-    width: 100px;
+.barraNav .imagenNav {
+  width: 100px;
 }
-.barraNav ul{
-    margin: 0px 15px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.barraNav .barraNav__menu {
+  display: none;
 }
-.barraNav ul li a{
+@media (max-width: 992px) {
+  .barraNav .barraNav__menu {
     display: block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size:30px;
-    padding: 0px 20px;
-    transition: 0.4s;
-}
-.barraNav ul li a:hover{
-    color: #f15416c5;  
-    text-shadow: none;
-
-}
-.barraNav__inicio, .barraNav__alquileres, .barraNav__nosotros, .barraNav__contacto {
-    color: #f15516 !important; 
-}
-/*fin navegador*/
-
-/*inicio boton flotante whatsapp*/
-.botonFlotante{
-    position: fixed;
-    width: 80px;
-    height:80px;
-    line-height: 80px;
-    background-color: #0df053;
-    color: white;
-    bottom: 30px;
-    right:40px;
-    border-radius: 50px;
-    text-align: center;
     font-size: 50px;
-    box-shadow: 0px 1px 10px black;
-    z-index: 100;
+    color: white;
+    order: -1;
+    margin: 15px 20px;
+  }
+  .barraNav .barraNav__menu:hover + ul {
+    left: 0px;
+  }
 }
-.botonFlotante:hover{
-    background-color:white;
-    color:#0df053;
+.barraNav ul {
+  margin: 0px 15px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-/*fin boton flotante whatsapp*/
-
-/*INICIO INDEX*/
-/*inicio portada index*/
-.portadaInicio {
-    width: 100%;
-    height: 500px;
-    background-image: url(../multimedia/img/nadie-sala-silla-ruedas-muletas-ayudar-transporte-espacio-vacio-equipo-apoyo-marcha-dar-ayuda-personas-discapacidad-cronica-movilidad-fisica.jpg);
-    background-size: cover;
-    margin-top:75px;
-    display: flex;
-    justify-content: center;
+@media (max-width: 992px) {
+  .barraNav ul {
+    position: fixed;
+    background-color: black;
+    border-radius: 10px;
+    width: 75vw;
+    height: 100vh;
+    top: 0;
+    margin: 0px;
+    left: -1000px;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+  }
+  .barraNav ul:hover {
+    left: 0px;
+  }
+}
+.barraNav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 20px;
+  transition: 0.4s;
+}
+.barraNav ul li a:hover {
+  color: #f15516;
+  text-shadow: none;
+}
+@media (max-width: 992px) {
+  .barraNav ul li a {
+    color: white;
+  }
+}
+.barraNav ul .barraNav__inicio, .barraNav ul .barraNav__alquileres, .barraNav ul .barraNav__nosotros, .barraNav ul .barraNav__contacto {
+  color: #f15516;
+}
+
+.botonFlotante {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #0df053;
+  color: white;
+  bottom: 30px;
+  right: 40px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px black;
+  z-index: 100;
+}
+.botonFlotante:hover {
+  background-color: white;
+  color: #0df053;
+}
+@media (max-width: 768px) {
+  .botonFlotante {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+  }
+}
+
+.portadaInicio {
+  background-image: url(../multimedia/img/nadie-sala-silla-ruedas-muletas-ayudar-transporte-espacio-vacio-equipo-apoyo-marcha-dar-ayuda-personas-discapacidad-cronica-movilidad-fisica.jpg);
+}
+@media (max-width: 1200px) {
+  .portadaInicio {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .portadaInicio {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .portadaInicio {
+    height: 250px;
+  }
 }
 .portadaInicio h1 {
-color: white;
-font-size: 80px;
-font-weight: bold;
-text-align: center;
-text-shadow: 2px 2px 2px #000000;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
 }
-/*fin portada index*/
 
-/*inicio parrafo index*/
-.inicioParrafo{
-    margin:30px 10pxgi;
-    padding: 20px 0px 20px 25px;
-    font-size: 18px;
-    line-height: 40px;
-}
-.parrafoPalabraPrincipal{
-    color: #f15516;
-    font-weight: bold;
-}
-/*fin parrafo index*/
-
-/*inicio productos*/
-.tituloProductos{
-    margin-bottom: 50px;
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-}
-.tarjetas__productos {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-items: center;
-}
-.tarjetaProductos {
-    width:200px;
-    border: groove 4px #419ef5;
-    border-radius: 10px;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 15px;
-    margin: 10px 15px;
-    transition: 0.2s;
-}
-.tarjetaProductos:hover{
-    background-color: #413f3f49 ;
-}
-.tarjetaProductos h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    font-style: oblique;
-}
-.tarjetaProductos img{
-    width: 100%;
-    height: 160px;
-    padding: 5px;
-}
-.tarjetaProductos button{
-    background-color: #f15516;
-    color: white;
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor:pointer;
-    transition: 0.4s;
-}
-.tarjetaProductos button:hover{
-    color: black;
-    background-color: #f13716;
-}
-/*fin productos*/
-
-/*inicio novedades*/
-.divNovedades {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-.emailNovedades{
-    width: 600px;
-    text-align: center;
-    border: solid 1px #419ef5;
-    border-radius: 5px;
-    height: 35px;
-    margin: 25px 5px 30px 0px;
-    padding:5px;
-    outline: none;
-}
-.emailNovedades:hover{
-    border: 1px solid #f13716;
-}
-.botonEmailNovedades{
-    background-color: #f15516;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    transition: 0.4s;
-    cursor:pointer
-}
-.botonEmailNovedades:hover{
-    color: black;
-    background-color: #f13716;
-}
-/*fin novedades*/
-
-/*inicio footer*/
-.footer{
-    background-color: #20619e;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-}
-.logoFooter {
-    width: 100px;
-}
-.textoFooter {
-margin:10px;
-color: aliceblue;
-}
-.descripcion {
-    padding: 0px 30px;
-}
-.descripcion img{ 
-    float:left;
-    width:90px;
-    height:60px;
-}
-.textoFooter h4{
-    font-size: 20px;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-}
-.contactenos{
-    align-self: start;
-}
-.contactenos span{
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 10px 10px 10px 10px;
-}
-.contactenos h4{
-    justify-self: start;
-}
-.redes{
-    align-self: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.redesLogos i{
-   
-    font-size: 50px;
-    color: white;
-    padding: 25px;
-}
-.redesLogos i:hover{
-    color: #f15516;
-}
-/*fin footer*/
-/*FIN INDEX*/
-
-/*INICIO ALQUILERES*/
-/*inicio portada alquileres*/
-.barraNav__alquileres {
-    color: #f15516 !important;
-}
 .portadaAlquileres {
-    width: 100%;
-    height: 500px;
-    background-image: url(../multimedia/img/mujer-tiro-completo-hombre-discapacitado-viajando.jpg);
-    background-size: cover;
-    margin-top:75px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url(../multimedia/img/mujer-tiro-completo-hombre-discapacitado-viajando.jpg);
+}
+@media (max-width: 1200px) {
+  .portadaAlquileres {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .portadaAlquileres {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .portadaAlquileres {
+    height: 250px;
+  }
 }
 .portadaAlquileres h1 {
-    font-size: 80px;
-    color: white;
-    text-align: justify;
-    margin-left:15px;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #000000;
+  font-size: 60px;
+  color: white;
+  text-align: justify;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000000;
 }
-/*fin portada alquileres*/
 
-/*inicio tarjeta alquileres*/
+.portadaNosotros {
+  background-image: url(../multimedia/img/persona-discapacitada-que-viaja-ciudad.jpg);
+}
+@media (max-width: 1200px) {
+  .portadaNosotros {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .portadaNosotros {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .portadaNosotros {
+    height: 250px;
+  }
+}
+.portadaNosotros h1 {
+  font-size: 60px;
+  color: white;
+  text-align: justify;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000000;
+}
 
-.tarjetaAlquileres{
-    width:768px;
-    border: 4px groove #419ef5;
-    padding:20px;
-    margin: 50px 60px;
-    border-radius: 10px;
+.portadaContacto {
+  background-image: url(../multimedia/img/mujer-joven-practicando-ejercicio-sesion-fisioterapia.jpg);
 }
-.tarjetaAlquileres:hover{
-    background-color: #413f3f49 ;
+@media (max-width: 1200px) {
+  .portadaContacto {
+    margin-top: 0px;
+  }
 }
-.tarjetaAlquileres__titulo{
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
+@media (max-width: 992px) {
+  .portadaContacto {
+    height: 350px;
+  }
 }
-.tarjetaAlquileres__lista{
-    display:flex;
-    flex-direction: column;
-    text-align: start;
-    list-style: inside ;
-    padding: 20px;
-    font-size: 18px;
-}
-/*fin tarjeta alquileres*/
-
-/*inicio carrousel*/
-.divCarrousel{
-    margin-bottom: 40px;
-}
-.divCarrousel__titulo{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 40px 0px;
-}
-.carrousel img{
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-}
-.carrousel h5{
-    font-size: 40px;
-    text-shadow: 2px 2px 2px #000000;
-}
-.carrousel p{
-    font-size: 25px;
-    text-shadow: 2px 2px 2px #000000;
-}
-/*fin carrousel*/
-/*FIN ALQUILERES*/
-
-/*INICIO NOSOTROS*/
-/*inicio portada nosotros*/
-.barraNav__nosotros {
-    color: #f15516 !important;
-}
-.portadaNosotros{
-    width: 100%;
-    height: 500px;
-    background-image: url(../multimedia/img/persona-discapacitada-que-viaja-ciudad.jpg);
-    background-size: cover;
-    margin-top:75px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.portadaNosotros h1{
-    font-size: 80px;
-    color: white;
-    text-align: justify;
-    margin-left:15px;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #000000;
-}
-/*fin portada nosotros*/
-
-/*inicio tarjeta nosotros*/
-
-.tarjetaNosotros {
-    width: 800px;
-    font-size: 18px;
-    border: 4px groove #419ef5;
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 25px;
-}
-.tarjetaNosotros:hover{
-    background-color: #413f3f49 ;
-   
-}
-.tarjetaNosotros__titulo{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-
-}
-.tarjetaNosotros__Parrafo {
-    line-height: 35px;
-}
-.tarjetaNosotros__Punteo {
-    list-style: inside;
-    line-height: 35px;
-}
-.fotoCollage {
-    width: 100%;
-    margin:20px 0px;
-}
-/*fin tarjeta nosotros*/
-/*FIN NOSOTROS*/
-
-/*INICIO CONTACTO*/
-/*inicio portada contacto*/
-.barraNav__contacto {
-    color: #f15516 !important;
-}
-.portadaContacto{
-    width: 100%;
-    height: 500px;
-    background-image: url(../multimedia/img/mujer-joven-practicando-ejercicio-sesion-fisioterapia.jpg);
-    background-size: cover;
-    margin-top:75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 576px) {
+  .portadaContacto {
+    height: 250px;
+  }
 }
 .portadaContacto h1 {
-    font-size: 80px;
-    color: white;
-    text-align: justify;
-    margin-left:15px;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #000000;
+  font-size: 60px;
+  color: white;
+  text-align: justify;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000000;
 }
-/*fin portada nosotros*/
 
-/*inicio tarjeta datos contacto*/
-.divTarjetasContacto{
-    display: grid;
+.inicioParrafo {
+  margin: 30px;
+  padding: 20px 0px 20px 25px;
+  font-size: 16px;
+  line-height: 40px;
+}
+@media (max-width: 768px) {
+  .inicioParrafo {
+    line-height: 35px;
+  }
+}
+.inicioParrafo .parrafoPalabraPrincipal {
+  color: #f15516;
+  font-weight: bold;
+}
+
+.tituloProductos {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .tituloProductos {
+    font-size: 20px;
+  }
+}
+
+.tarjetas__productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+@media (max-width: 1200px) {
+  .tarjetas__productos {
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
-    margin: 20px 0px;
-    justify-content: center;
+  }
 }
-.datosContacto{
-    width: 550px;
-    margin: 15px 0px;
-    border: groove 4px #f13716;
-    border-radius: 10px;
+@media (max-width: 576px) {
+  .tarjetas__productos {
+    grid-template-columns: 1fr;
+  }
 }
-.datosContacto:hover{
-    background-color: #413f3f49;
+
+.tarjetaProductos {
+  width: 200px;
+  border: groove 4px #20619e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 15px;
+  margin: 10px 15px;
+  transition: 0.2s;
 }
-.datosContacto__titulo{
-    font-weight: bold;
-    font-size: 30px;
-    padding:10px 0px;
-    text-align: center;
+.tarjetaProductos:hover {
+  background-color: rgba(65, 63, 63, 0.1568627451);
 }
-.datosContacto ul li{
-    padding: 20px 15px 20px 0px;
-    list-style: inside;
-    font-size: 18px;
+.tarjetaProductos h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: oblique;
 }
-.datosContacto span{
-font-weight: bold;
+.tarjetaProductos img {
+  width: 100%;
+  height: 160px;
+  padding: 5px;
+}
+.tarjetaProductos button {
+  background-color: #f15516;
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 5px 0px;
+  padding: none;
+}
+.tarjetaProductos button:hover, .tarjetaProductos button:focus {
+  color: black;
+}
+
+.divNovedades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emailNovedades {
+  width: 600px;
+  text-align: center;
+  font-size: 14px;
+  border: solid 1px #20619e;
+  border-radius: 5px;
+  height: 35px;
+  margin: 25px 5px 30px 0px;
+  padding: 5px;
+  outline: none;
+}
+.emailNovedades:hover {
+  border: 1px solid #f15516;
+}
+@media (max-width: 768px) {
+  .emailNovedades {
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .emailNovedades {
+    width: 270px;
+  }
+}
+
+.botonEmailNovedades {
+  background-color: #f15516;
+  color: white;
+  font-size: 16px;
+  height: none;
+  width: none;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 0px 5px;
+  padding: 10px;
+}
+.botonEmailNovedades:hover, .botonEmailNovedades:focus {
+  color: black;
+}
+@media (max-width: 768px) {
+  .botonEmailNovedades {
+    height: 38px;
+  }
+}
+@media (max-width: 576px) {
+  .botonEmailNovedades {
+    height: 36px;
+  }
+}
+
+.footer {
+  background-color: #20619e;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer .textoFooter {
+  margin: 10px;
+  color: aliceblue;
+}
+@media (max-width: 768px) {
+  .footer .textoFooter {
+    grid-column: 1/3;
+  }
+}
+.footer .textoFooter h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.footer .descripcion {
+  padding: 0px 30px;
+}
+.footer .descripcion .logoFooter {
+  float: left;
+  width: 90px;
+  height: 60px;
+}
+.footer .contactenos {
+  align-self: start;
+}
+.footer .contactenos span {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 10px 10px 10px 10px;
+}
+.footer .redes {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .redes .facebook {
+  color: #1877f2;
+}
+.footer .redes .instagram {
+  color: #d6249f;
+}
+.footer .redes .gmail {
+  color: #f54236;
+}
+@media (max-width: 1200px) {
+  .footer .redes {
+    grid-column: 1/3;
+  }
+}
+.footer .redes i {
+  font-size: 50px;
+  color: white;
+  padding: 25px;
+}
+.footer .redes i:hover {
+  color: white;
+}
+
+.tarjetaAlquileres {
+  width: 768px;
+  border: outline;
+  padding: 20px;
+  background: rgb(65, 158, 245);
+  background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
+  margin: 50px 60px;
+  border-radius: 10px;
+}
+.tarjetaAlquileres:hover {
+  background-color: rgba(65, 63, 63, 0.1568627451);
+}
+@media (max-width: 992px) {
+  .tarjetaAlquileres {
+    width: 80%;
+  }
+}
+.tarjetaAlquileres .tarjetaAlquileres__titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.tarjetaAlquileres .tarjetaAlquileres__lista {
+  font-size: 16px;
+  color: black;
+  line-height: 40px;
+}
+
+.Carrousel__titulo {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 40px 0px;
+}
+
+.divCarrousel {
+  margin-bottom: 40px;
+}
+
+.carrousel img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .carrousel img {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  .carrousel img {
+    height: 250px;
+  }
+}
+.carrousel h5 {
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #000000;
+}
+.carrousel p {
+  font-size: 25px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.tarjetaNosotros {
+  width: 800px;
+  border: outline;
+  background: rgb(241, 85, 22);
+  background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 30px;
+  margin: 50px;
+}
+.tarjetaNosotros:hover {
+  background-color: rgba(65, 63, 63, 0.1568627451);
+}
+@media (max-width: 992px) {
+  .tarjetaNosotros {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .tarjetaNosotros {
+    padding: 20px;
+  }
+}
+.tarjetaNosotros .tarjetaNosotros__titulo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .tarjetaNosotros .tarjetaNosotros__titulo {
+    font-size: 20px;
+  }
+}
+.tarjetaNosotros .tarjetaNosotros__Parrafo {
+  line-height: 40px;
+}
+@media (max-width: 576px) {
+  .tarjetaNosotros .tarjetaNosotros__Parrafo {
+    line-height: 30px;
+  }
+}
+.tarjetaNosotros .tarjetaNosotros__Punteo {
+  list-style: inside;
+  line-height: 40px;
+}
+@media (max-width: 768px) {
+  .tarjetaNosotros .tarjetaNosotros__Punteo {
+    list-style: disc;
+  }
+}
+
+.fotoCollage {
+  width: 100%;
+  margin: 20px 0px 40px;
+}
+
+.divTarjetasContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  margin: 20px 0px;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .divTarjetasContacto {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.datosContacto {
+  width: 500px;
+  margin: 15px 0px;
+  border: outline;
+  background: rgb(65, 158, 245);
+  background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
+  border-radius: 10px;
+}
+.datosContacto:hover {
+  background-color: rgba(65, 63, 63, 0.1568627451);
+}
+@media (max-width: 1200px) {
+  .datosContacto {
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .datosContacto {
+    width: 80%;
+  }
+}
+.datosContacto .datosContacto__titulo {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .datosContacto .datosContacto__titulo {
+    font-size: 20px;
+  }
+}
+.datosContacto ul li {
+  padding: 20px 15px 20px 0px;
+  list-style: inside;
+  font-size: 16px;
+}
+.datosContacto ul li span {
+  font-weight: bold;
 }
 .datosContacto iframe {
-    margin:20px;
-    border-radius: 10px;
-    width: 500px;
-    height: 300px;
-
+  margin: 20px;
+  border-radius: 10px;
+  width: 450px;
+  height: 300px;
 }
-/*fin tarjeta datos contacto*/
+@media (max-width: 1200px) {
+  .datosContacto iframe {
+    width: 90%;
+    height: 300px;
+  }
+}
+@media (max-width: 992px) {
+  .datosContacto iframe {
+    width: 90%;
+  }
+}
 
-/*inicio formulario*/
 .tarjetaConsulta {
-    display: inline-block;
-    border: groove 4px #419ef5;
-    margin:15px 50px;
-    padding: 10px;
-    width: 500px;
-    border-radius: 10px;
-}   
-.tarjetaConsulta:hover{
-    background-color: #413f3f49 ;
+  display: inline-block;
+  border: outline;
+  background: rgb(241, 85, 22);
+  background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
+  margin: 15px 50px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+}
+.tarjetaConsulta:hover {
+  background-color: rgba(65, 63, 63, 0.1568627451);
+}
+@media (max-width: 1200px) {
+  .tarjetaConsulta {
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .tarjetaConsulta {
+    width: 80%;
+  }
 }
 .tarjetaConsulta h2 {
-    color: black;
-    font-weight: bolder;
-    font-size: 30px;
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.tarjetaConsulta .formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+@media (max-width: 992px) {
+  .tarjetaConsulta .formulario {
+    grid-template-columns: 1fr;
     text-align: center;
-    margin-bottom: 25px;
+    row-gap: 20px;
+  }
 }
-.formulario{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 15px;
-    font-weight: bold;
-    font-size:18px;
-    padding: 10px;
+.tarjetaConsulta .formulario .inputContacto {
+  border: none;
+  background: none;
+  font-size: 14px;
+  text-align: justify;
+  border-bottom: 1px solid #f15516;
+  padding: 5px;
+  cursor: pointer;
+  width: 90%;
+  padding-top: 15px;
 }
-.inputContacto {
-    border: none;
-    background:none;
-    border-bottom: 1px solid #f15516;
-    padding:5px;
-    cursor: pointer;
-    width:90%;
-    padding-top: 15px;    
+.tarjetaConsulta .formulario .inputContacto:focus, .tarjetaConsulta .formulario .inputContacto:hover {
+  outline: none;
+  border-bottom: 2px solid #fa0909;
 }
-.inputContacto:focus,.inputContacto:hover{
-    outline:none;
-    border-bottom:2px solid #fa0909;
+@media (max-width: 992px) {
+  .tarjetaConsulta .formulario .inputContacto {
+    width: 90%;
+    text-align: center;
+  }
 }
-.labinp__solo{
-    grid-column: 1/3;
+.tarjetaConsulta .formulario .labinp__solo {
+  grid-column: 1/3;
 }
-.inputMensaje{
-    width: 95%;
+@media (max-width: 992px) {
+  .tarjetaConsulta .formulario .labinp__solo {
+    grid-column: 1/1;
+  }
 }
-.formulario__boton {
-    background-color: #f15516;
-    color: white;
-    font-weight: bolder;
-    height: 40px;
-    padding: 3px 0px;
-    margin: 20px 0px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 97%;
-    transition: 0.4s;
-}  
-.formulario__boton:focus, .formulario__boton:hover{
-    color: black;
-    background-color: #f13716;
+.tarjetaConsulta .formulario .labinp__solo .inputMensaje {
+  width: 95%;
 }
-/*fin formulario*/
-/*FIN CONTACTO*/
+.tarjetaConsulta .formulario .labinp__solo .formulario__boton {
+  background-color: #f15516;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  width: 97%;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 20px 0px;
+  padding: 3px 0px;
+}
+.tarjetaConsulta .formulario .labinp__solo .formulario__boton:hover, .tarjetaConsulta .formulario .labinp__solo .formulario__boton:focus {
+  color: black;
+}
 
-/*inicio media queries*/
-@media(max-width:1200px) {
-    .barraNav{
-        position: static;
-    }
-    .portadaInicio, .portadaAlquileres, .portadaNosotros, .portadaContacto{
-        margin-top:0px;
-    }
-    .tarjetas__productos{
-        grid-template-columns: 1fr 1fr;
-    }
-    .footer{
-        grid-template-columns: 1fr 1fr;
-    }
-    .redes{
-        grid-column: 1/3;
-        }
-    .datosContacto{
-        width:350px;  
-    }
-    .datosContacto iframe{
-        width:90%;
-        height: 300px;
-    }
-    .tarjetaConsulta{
-        width: 350px;
-    }
-    .inputContacto{
-        font-size: 14px;
-    }
-}
-@media(max-width:992px) {
-    .barraNav__menu{
-        display: block;
-        font-size: 50px;
-        color: white;
-        margin: 15px 20px;
-    }
-    .barraNav__menu:hover + ul{
-        left:0px;
-
-    }
-    .barraNav ul{
-        position: fixed;
-        background-color: white;
-        border-radius: 10px;
-        width: 75vw;
-        height: 100vh;
-        top:0;
-        margin: 0px;
-        left: -1000px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        transition: 0.5s;
-    }
-    .barraNav ul:hover{
-        left:0px;
-    }
-    .barraNav ul li a{
-        color: black;
-
-    }
-    .portadaInicio, .portadaAlquileres, .portadaNosotros, .portadaContacto {
-        height: 350px; 
-    }
-    .tarjetaAlquileres{
-        width: 80%;
-    }
-    .carrousel img{
-        height: 350px;
-    }
-    .tarjetaNosotros{
-        width:80%;
-    }
-    .divTarjetasContacto{
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .datosContacto{
-        width:80%;
-    }
-    .datosContacto iframe {
-        width: 90%;
-    }
-    .tarjetaConsulta {
-        width: 80%;
-    }
-    .formulario{
-        grid-template-columns: 1fr;
-        text-align: center;
-        row-gap: 20px;
-
-    }
-    .labinp__solo{
-        grid-column: 1/1;
-    }
-    .inputContacto{
-        width:90%;
-    }
-} 
-@media(max-width:768px){
-    .botonFlotante{
-        width: 50px;
-        height:50px;
-        line-height: 50px;
-        font-size: 35px;
-       
-    }
-    .inicioParrafo{
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .emailNovedades{
-        width:300px;
-        font-size: 14px;
-    }
-    .botonEmailNovedades{
-        font-size: 14px;
-        height: 38px;   
-     }
-    .textoFooter{
-        grid-column: 1/3;
-    }
-    .tarjetaAlquileres__titulo{
-        font-size: 20px;
-    }
-    .tarjetaAlquileres__lista{
-        font-size: 14px;
-    }
-    .divCarrousel__titulo{
-        font-size: 20px;
-    }
-    .tarjetaNosotros__titulo{
-        font-size: 20px;
-    }
-    .tarjetaNosotros__Parrafo, .tarjetaNosotros__Punteo{
-        font-size: 14px;
-        list-style: disc;
-    }
-    }
-@media(max-width:576px){
-    .portadaInicio, .portadaAlquileres, .portadaNosotros, .portadaContacto {
-        height: 250px; 
-    }
-    .portadaInicio h1, .portadaAlquileres h1, .portadaNosotros h1, .portadaContacto h1{
-        font-size: 60px;
-    }
-    .tituloProductos{
-        font-size: 20px;
-    }
-    .tarjetas__productos {
-        grid-template-columns: 1fr;
-    }
-    .tarjetaProductos button{
-        font-size: 14px;
-    }
-    .emailNovedades{
-        width:250px;
-        font-size: 12px;
-    }
-    .botonEmailNovedades{
-        font-size: 12px;
-        height: 36px;   
-    }
-    .tarjetaAlquileres__lista{
-        padding:10px 0px;
-    }
-    .carrousel img{
-        height: 250px;
-    }
-    .tarjetaNosotros{
-        padding: 20px;
-    }
-    .tarjetaNosotros__Parrafo {
-        line-height: 20px;
-    }
-    .tarjetaNosotros__Punteo{
-        line-height: 20px;
-    }
-    .datosContacto__titulo{
-        font-size: 20px;
-    }
-    .datosContacto ul li{
-        font-size: 14px;
-    }
-    .tarjetaConsulta h2{
-        font-size: 20px;
-    }
-    .formulario {
-        font-size: 14px;
-    }
-    .formulario__boton{
-        font-size: 16px;
-    }
-}
-/*fin media queries*/
-
-
-
+/*# sourceMappingURL=styles.css.map */
