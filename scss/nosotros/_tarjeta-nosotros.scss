@@ -30,7 +30,7 @@
     .tarjetaNosotros__Parrafo {
         line-height: $interlineado-parrafo;
         @media(max-width:576px){
-            line-height: 30px;
+            line-height: 20px;
             }
         }
         
@@ -40,6 +40,8 @@
         
         @media(max-width:768px){
             list-style: disc;
+            line-height: 20px;
+
         }
         
     }

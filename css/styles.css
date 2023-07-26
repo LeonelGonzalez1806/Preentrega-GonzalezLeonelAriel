@@ -480,6 +480,11 @@
   color: black;
   line-height: 40px;
 }
+@media (max-width: 768px) {
+  .tarjetaAlquileres .tarjetaAlquileres__lista {
+    line-height: 20px;
+  }
+}
 
 .Carrousel__titulo {
   text-align: center;
@@ -558,7 +563,7 @@
 }
 @media (max-width: 576px) {
   .tarjetaNosotros .tarjetaNosotros__Parrafo {
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 .tarjetaNosotros .tarjetaNosotros__Punteo {
@@ -568,6 +573,7 @@
 @media (max-width: 768px) {
   .tarjetaNosotros .tarjetaNosotros__Punteo {
     list-style: disc;
+    line-height: 20px;
   }
 }
 
@@ -716,7 +722,12 @@
   }
 }
 .tarjetaConsulta .formulario .formulario__labinp label {
-  padding: 0px 30px;
+  padding: 0px 5px;
+}
+@media (max-width: 992px) {
+  .tarjetaConsulta .formulario .formulario__labinp label {
+    padding: 0px 30px;
+  }
 }
 .tarjetaConsulta .formulario .formulario__labinp .inputContacto {
   border: none;

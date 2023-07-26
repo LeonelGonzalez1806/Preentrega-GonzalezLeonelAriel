@@ -25,6 +25,9 @@
             font-size: $font-texto;
             color: black;
             line-height: $interlineado-parrafo;
+            @media (max-width:768px){
+            line-height: 20px;
+        }
             }
     
 }
