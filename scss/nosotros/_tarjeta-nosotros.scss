@@ -12,10 +12,10 @@
         background-color: $bg-color-hover ;
     }
     @media(max-width:992px){
-            width:80%;
+        width:80%;
     }
     @media(max-width:576px){
-            padding: 20px;
+        padding: 20px;
     }
     .tarjetaNosotros__titulo{
         font-size: $font-titulo;
@@ -24,13 +24,13 @@
         text-align: center;
         text-shadow: $text-shadow;
         @media(max-width:768px){
-                font-size: 20px;
+            font-size: 20px;
             }
     }
     .tarjetaNosotros__Parrafo {
         line-height: $interlineado-parrafo;
         @media(max-width:576px){
-                line-height: 30px;
+            line-height: 30px;
             }
         }
         

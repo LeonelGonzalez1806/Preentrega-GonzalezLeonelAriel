@@ -12,10 +12,16 @@
         background-color: $bg-color-hover ;
     }
     @media(max-width:1200px){
-            width: 400px;
+            width: 40vw;
     }
     @media(max-width:992px){
             width: 80%;
+            margin: 15px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr;
     }
     h3 {
         color: black;
@@ -24,52 +30,63 @@
         text-align: center;
         margin-bottom: 25px;
         text-shadow: $text-shadow;
+        
     }
     .formulario{
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
         row-gap: 25px;
         font-weight: bold;
-        font-size:18px;
+        font-size:$font-texto;
         padding: 10px;
         @media(max-width:992px){
-                grid-template-columns: 1fr;
                 text-align: center;
+                grid-template-columns: 1fr;
                 row-gap: 20px;
         }
-        .inputContacto {
-            border: none;
-            background:none;
-            font-size:14px;
-            text-align: justify;
-            border-bottom: 1px solid #f15516;
-            padding:5px;
-            cursor: pointer;
-            width:90%;
-            padding-top: 15px;
-            &:focus,&:hover {
-                outline:none;
-                border-bottom:2px solid #fa0909;
+        .formulario__labinp{
+            label{
+                padding: 0px 30px;
+
             }
-            @media(max-width:992px){
-                    width:90%;
-                    text-align: center;
-            }   
+            
+            .inputContacto {
+                border: none;
+                background:none;
+                font-size:14px;
+                text-align: justify;
+                border-bottom: 1px solid #f15516;
+                padding:5px;
+                cursor: pointer;
+                width:90%;
+                padding-top: 15px;
+                &:focus,&:hover {
+                    outline:none;
+                    border-bottom:2px solid #fa0909;
+                }
+                @media(max-width:992px){
+                        width:90%;
+                        text-align: center;
+                }   
+            }
         }
         .labinp__solo{
             grid-column: 1/3;
             @media(max-width:992px){
-                    grid-column: 1/1;
+                grid-column: 1;
             }
             .inputMensaje{
                 width: 95%;
             }
             .formulario__boton {
                 @include boton (18px,40px,97%,20px 0px,3px 0px);
-             
+                
             }  
         }
+           
+        
+        
+        
     }
 }   
 

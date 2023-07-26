@@ -127,7 +127,7 @@
 }
 
 .portadaInicio {
-  background-image: url(../../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
+  background-image: url(../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
 }
 @media (max-width: 1200px) {
   .portadaInicio {
@@ -153,7 +153,7 @@
 }
 
 .portadaAlquileres {
-  background-image: url(../../multimedia/img/portadas/hombre-mujer-rio.jpg);
+  background-image: url(../multimedia/img/portadas/hombre-mujer-rio.jpg);
 }
 @media (max-width: 1200px) {
   .portadaAlquileres {
@@ -179,7 +179,7 @@
 }
 
 .portadaNosotros {
-  background-image: url(../../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
+  background-image: url(../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
 }
 @media (max-width: 1200px) {
   .portadaNosotros {
@@ -205,7 +205,7 @@
 }
 
 .portadaContacto {
-  background-image: url(../../multimedia/img/portadas/mujer-rodillera.jpg);
+  background-image: url(../multimedia/img/portadas/mujer-rodillera.jpg);
 }
 @media (max-width: 1200px) {
   .portadaContacto {
@@ -231,14 +231,15 @@
 }
 
 .inicioParrafo {
-  margin: 30px;
+  margin: 30px 60px 30px 50px;
   padding: 20px 0px 20px 25px;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 35px;
 }
 @media (max-width: 768px) {
   .inicioParrafo {
-    line-height: 35px;
+    padding: 20px 0px;
+    margin: 30px 40px;
   }
 }
 .inicioParrafo .parrafoPalabraPrincipal {
@@ -271,7 +272,7 @@
 }
 
 .tarjetaProductos {
-  width: 300px;
+  width: 250px;
   border: groove 4px #20619e;
   border-radius: 10px;
   display: flex;
@@ -450,7 +451,7 @@
 }
 
 .tarjetaAlquileres {
-  width: 768px;
+  width: 800px;
   border: outline;
   padding: 20px;
   background: rgb(65, 158, 245);
@@ -493,7 +494,7 @@
 }
 
 .carrousel img {
-  height: 600px;
+  height: 500px;
   width: 100%;
   object-fit: cover;
 }
@@ -570,22 +571,34 @@
   }
 }
 
-.fotoCollage {
+.fotoNosotros {
   width: 100%;
+  height: 500px;
   margin: 20px 0px 40px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .fotoNosotros {
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .fotoNosotros {
+    height: 250px;
+  }
 }
 
 .divTarjetasContacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 15px;
-  margin: 20px 0px 30px;
-  justify-content: center;
+  margin: 30px 0px;
+  justify-items: center;
 }
 @media (max-width: 992px) {
   .divTarjetasContacto {
     grid-template-columns: 1fr;
-    justify-items: center;
+    margin: 20px 0px;
   }
 }
 
@@ -603,7 +616,7 @@
 }
 @media (max-width: 1200px) {
   .datosContacto {
-    width: 400px;
+    width: 40vw;
   }
 }
 @media (max-width: 992px) {
@@ -665,12 +678,18 @@
 }
 @media (max-width: 1200px) {
   .tarjetaConsulta {
-    width: 400px;
+    width: 40vw;
   }
 }
 @media (max-width: 992px) {
   .tarjetaConsulta {
     width: 80%;
+    margin: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 .tarjetaConsulta h3 {
@@ -684,20 +703,22 @@
 .tarjetaConsulta .formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   row-gap: 25px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
 }
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario {
-    grid-template-columns: 1fr;
     text-align: center;
+    grid-template-columns: 1fr;
     row-gap: 20px;
   }
 }
-.tarjetaConsulta .formulario .inputContacto {
+.tarjetaConsulta .formulario .formulario__labinp label {
+  padding: 0px 30px;
+}
+.tarjetaConsulta .formulario .formulario__labinp .inputContacto {
   border: none;
   background: none;
   font-size: 14px;
@@ -708,12 +729,12 @@
   width: 90%;
   padding-top: 15px;
 }
-.tarjetaConsulta .formulario .inputContacto:focus, .tarjetaConsulta .formulario .inputContacto:hover {
+.tarjetaConsulta .formulario .formulario__labinp .inputContacto:focus, .tarjetaConsulta .formulario .formulario__labinp .inputContacto:hover {
   outline: none;
   border-bottom: 2px solid #fa0909;
 }
 @media (max-width: 992px) {
-  .tarjetaConsulta .formulario .inputContacto {
+  .tarjetaConsulta .formulario .formulario__labinp .inputContacto {
     width: 90%;
     text-align: center;
   }
@@ -723,7 +744,7 @@
 }
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .labinp__solo {
-    grid-column: 1/1;
+    grid-column: 1;
   }
 }
 .tarjetaConsulta .formulario .labinp__solo .inputMensaje {

@@ -3,7 +3,7 @@ $redes: (facebook:#1877f2,
          gmail:#f54236);
 .portadaInicio {
     @extend %img-portada;
-    background-image: url(../../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
+    background-image: url(../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
     @media(max-width:1200px){
             margin-top:0px;
         }
@@ -23,7 +23,7 @@ $redes: (facebook:#1877f2,
 }
 .portadaAlquileres {
     @extend %img-portada;
-    background-image: url(../../multimedia/img/portadas/hombre-mujer-rio.jpg);
+    background-image: url(../multimedia/img/portadas/hombre-mujer-rio.jpg);
     
     @media(max-width:1200px){
             margin-top:0px;
@@ -44,7 +44,7 @@ $redes: (facebook:#1877f2,
 }
 .portadaNosotros{
     @extend %img-portada;
-    background-image: url(../../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
+    background-image: url(../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
     @media(max-width:1200px){
             margin-top:0px;
         }
@@ -64,7 +64,7 @@ $redes: (facebook:#1877f2,
 }
 .portadaContacto{
     @extend %img-portada;
-    background-image: url(../../multimedia/img/portadas/mujer-rodillera.jpg);
+    background-image: url(../multimedia/img/portadas/mujer-rodillera.jpg);
     @media(max-width:1200px){
             margin-top:0px;
         }
