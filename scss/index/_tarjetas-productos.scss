@@ -3,54 +3,20 @@
     font-size: $font-titulo;
     font-weight: bolder;
     text-align: center;
-    @media(max-width:576px){
-            font-size: 20px;
-        }
+    text-shadow: $text-shadow;
 }
 .tarjetas__productos {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-items: center;
     @media(max-width:1200px) {
-            grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         } 
-    @media(max-width:576px){
+    @media(max-width:768px){
         grid-template-columns: 1fr;
     }
-
 }
-.tarjetaProductos {
-    width:200px;
-    border: groove 4px $bg-color;
-    border-radius: 10px;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 15px;
-    margin: 10px 15px;
-    transition: 0.2s;
-    &:hover{
-    background-color: $bg-color-hover ;
-    }
-    h3 {
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        font-style: oblique;
-    }
-    img{
-        width: 100%;
-        height: 160px;
-        padding: 5px;
-        
-    }
-    button{
-        @include boton (16px,40px,100%,5px 0px,none);
-        
-    }
 
-}
 
 
 

@@ -127,7 +127,7 @@
 }
 
 .portadaInicio {
-  background-image: url(../multimedia/img/nadie-sala-silla-ruedas-muletas-ayudar-transporte-espacio-vacio-equipo-apoyo-marcha-dar-ayuda-personas-discapacidad-cronica-movilidad-fisica.jpg);
+  background-image: url(../../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
 }
 @media (max-width: 1200px) {
   .portadaInicio {
@@ -153,7 +153,7 @@
 }
 
 .portadaAlquileres {
-  background-image: url(../multimedia/img/mujer-tiro-completo-hombre-discapacitado-viajando.jpg);
+  background-image: url(../../multimedia/img/portadas/hombre-mujer-rio.jpg);
 }
 @media (max-width: 1200px) {
   .portadaAlquileres {
@@ -179,7 +179,7 @@
 }
 
 .portadaNosotros {
-  background-image: url(../multimedia/img/persona-discapacitada-que-viaja-ciudad.jpg);
+  background-image: url(../../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
 }
 @media (max-width: 1200px) {
   .portadaNosotros {
@@ -205,7 +205,7 @@
 }
 
 .portadaContacto {
-  background-image: url(../multimedia/img/mujer-joven-practicando-ejercicio-sesion-fisioterapia.jpg);
+  background-image: url(../../multimedia/img/portadas/mujer-rodillera.jpg);
 }
 @media (max-width: 1200px) {
   .portadaContacto {
@@ -251,11 +251,7 @@
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-}
-@media (max-width: 576px) {
-  .tituloProductos {
-    font-size: 20px;
-  }
+  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
 }
 
 .tarjetas__productos {
@@ -268,37 +264,43 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .tarjetas__productos {
     grid-template-columns: 1fr;
   }
 }
 
 .tarjetaProductos {
-  width: 200px;
+  width: 300px;
   border: groove 4px #20619e;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px 15px;
-  margin: 10px 15px;
+  padding: 10px;
+  margin: 10px 15px 30px;
   transition: 0.2s;
 }
 .tarjetaProductos:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
-.tarjetaProductos h3 {
+.tarjetaProductos img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  align-self: center;
+  cursor: pointer;
+}
+.tarjetaProductos span {
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
-  font-style: oblique;
+  font-size: 18px;
 }
-.tarjetaProductos img {
-  width: 100%;
-  height: 160px;
-  padding: 5px;
+.tarjetaProductos p {
+  font-size: 12px;
+  color: rgb(100, 100, 100);
+  margin: 10px 0px 30px;
 }
 .tarjetaProductos button {
   background-color: #f15516;
@@ -323,8 +325,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.emailNovedades {
+.divNovedades .emailNovedades {
   width: 600px;
   text-align: center;
   font-size: 14px;
@@ -335,24 +336,25 @@
   padding: 5px;
   outline: none;
 }
-.emailNovedades:hover {
+.divNovedades .emailNovedades:hover {
   border: 1px solid #f15516;
 }
 @media (max-width: 768px) {
-  .emailNovedades {
-    width: 300px;
+  .divNovedades .emailNovedades {
+    width: 400px;
   }
 }
 @media (max-width: 576px) {
-  .emailNovedades {
-    width: 270px;
+  .divNovedades .emailNovedades {
+    width: 90vw;
+    display: flex;
+    margin: 25px 0px 5px;
   }
 }
-
-.botonEmailNovedades {
+.divNovedades .botonEmailNovedades {
   background-color: #f15516;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   height: none;
   width: none;
   font-weight: bolder;
@@ -363,17 +365,14 @@
   margin: 0px 5px;
   padding: 10px;
 }
-.botonEmailNovedades:hover, .botonEmailNovedades:focus {
+.divNovedades .botonEmailNovedades:hover, .divNovedades .botonEmailNovedades:focus {
   color: black;
 }
-@media (max-width: 768px) {
-  .botonEmailNovedades {
-    height: 38px;
-  }
-}
 @media (max-width: 576px) {
-  .botonEmailNovedades {
-    height: 36px;
+  .divNovedades .botonEmailNovedades {
+    width: 90vw;
+    margin: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -458,6 +457,7 @@
   background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
   margin: 50px 60px;
   border-radius: 10px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
 .tarjetaAlquileres:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
@@ -472,6 +472,7 @@
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 30px;
+  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
 }
 .tarjetaAlquileres .tarjetaAlquileres__lista {
   font-size: 16px;
@@ -484,6 +485,7 @@
   font-size: 30px;
   font-weight: bold;
   margin: 40px 0px;
+  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
 }
 
 .divCarrousel {
@@ -523,6 +525,7 @@
   font-size: 18px;
   padding: 30px;
   margin: 50px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
 .tarjetaNosotros:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
@@ -542,6 +545,7 @@
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
+  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
 }
 @media (max-width: 768px) {
   .tarjetaNosotros .tarjetaNosotros__titulo {
@@ -575,7 +579,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 15px;
-  margin: 20px 0px;
+  margin: 20px 0px 30px;
   justify-content: center;
 }
 @media (max-width: 992px) {
@@ -587,6 +591,7 @@
 
 .datosContacto {
   width: 500px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
   margin: 15px 0px;
   border: outline;
   background: rgb(65, 158, 245);
@@ -611,6 +616,7 @@
   font-size: 30px;
   padding: 10px 0px;
   text-align: center;
+  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
 }
 @media (max-width: 576px) {
   .datosContacto .datosContacto__titulo {
@@ -646,6 +652,7 @@
 .tarjetaConsulta {
   display: inline-block;
   border: outline;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
   background: rgb(241, 85, 22);
   background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
   margin: 15px 50px;
@@ -666,12 +673,13 @@
     width: 80%;
   }
 }
-.tarjetaConsulta h2 {
+.tarjetaConsulta h3 {
   color: black;
   font-weight: bolder;
   font-size: 30px;
   text-align: center;
   margin-bottom: 25px;
+  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
 }
 .tarjetaConsulta .formulario {
   display: grid;

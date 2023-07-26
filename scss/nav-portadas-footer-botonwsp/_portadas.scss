@@ -1,6 +1,9 @@
+$redes: (facebook:#1877f2,
+         instagram:#d6249f,
+         gmail:#f54236);
 .portadaInicio {
     @extend %img-portada;
-    background-image: url(../multimedia/img/nadie-sala-silla-ruedas-muletas-ayudar-transporte-espacio-vacio-equipo-apoyo-marcha-dar-ayuda-personas-discapacidad-cronica-movilidad-fisica.jpg);
+    background-image: url(../../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
     @media(max-width:1200px){
             margin-top:0px;
         }
@@ -20,7 +23,7 @@
 }
 .portadaAlquileres {
     @extend %img-portada;
-    background-image: url(../multimedia/img/mujer-tiro-completo-hombre-discapacitado-viajando.jpg);
+    background-image: url(../../multimedia/img/portadas/hombre-mujer-rio.jpg);
     
     @media(max-width:1200px){
             margin-top:0px;
@@ -41,7 +44,7 @@
 }
 .portadaNosotros{
     @extend %img-portada;
-    background-image: url(../multimedia/img/persona-discapacitada-que-viaja-ciudad.jpg);
+    background-image: url(../../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
     @media(max-width:1200px){
             margin-top:0px;
         }
@@ -61,7 +64,7 @@
 }
 .portadaContacto{
     @extend %img-portada;
-    background-image: url(../multimedia/img/mujer-joven-practicando-ejercicio-sesion-fisioterapia.jpg);
+    background-image: url(../../multimedia/img/portadas/mujer-rodillera.jpg);
     @media(max-width:1200px){
             margin-top:0px;
         }

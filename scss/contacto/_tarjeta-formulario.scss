@@ -1,6 +1,7 @@
 .tarjetaConsulta {
     display: inline-block;
     border: outline;
+    box-shadow: $box-shadow;
     background: rgb(241,85,22);
     background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
     margin:15px 50px;
@@ -16,12 +17,13 @@
     @media(max-width:992px){
             width: 80%;
     }
-    h2 {
+    h3 {
         color: black;
         font-weight: bolder;
         font-size: $font-titulo;
         text-align: center;
         margin-bottom: 25px;
+        text-shadow: $text-shadow;
     }
     .formulario{
         display: grid;
