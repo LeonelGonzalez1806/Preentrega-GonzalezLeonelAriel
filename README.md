@@ -1,1 +1,1 @@
-Bienvenido a mi pagina donde comercializo productos ortopedicos, espero que sea de su agrado.
+¡Bienvenido/a a nuestra Página de Ortopedia! Aquí encontrarás todo lo que necesitas para mejorar tu bienestar físico y disfrutar de una vida más activa. Nuestro objetivo es proporcionarte productos y servicios de alta calidad que se adapten a tus necesidades.
