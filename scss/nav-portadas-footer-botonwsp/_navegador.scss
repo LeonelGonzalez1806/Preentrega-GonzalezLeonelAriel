@@ -1,3 +1,4 @@
+/*Navegador*/
 .barraNav {
     background-color: $bg-color;
     width: 100%;
@@ -35,7 +36,7 @@
             justify-content: space-around;
             @media(max-width:992px){
                 position: fixed;
-                background-color: black;
+                background-color: rgb(75, 74, 74);
                 border-radius: 10px;
                 width: 75vw;
                 height: 100vh;

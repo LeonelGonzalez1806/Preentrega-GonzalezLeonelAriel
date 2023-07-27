@@ -1,11 +1,13 @@
+/*Parrafo principal index*/
+
 .inicioParrafo{
     margin:30px 60px 30px 50px;
     padding: 20px 0px 20px 25px;
     font-size: $font-texto;
     line-height: 35px;
     @media(max-width:768px){
-            padding: 20px 0px;
-            margin: 30px 40px;
+        padding: 20px 0px;
+        margin: 30px 40px;
         }
     .parrafoPalabraPrincipal{
         color: $color;

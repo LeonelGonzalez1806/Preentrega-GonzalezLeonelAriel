@@ -1,3 +1,9 @@
+/*Footer*/
+
+$redes: (facebook:#1877f2,
+         instagram:#d6249f,
+         gmail:#f54236);
+
 .footer{
     background-color: $bg-color;
     display: grid;
@@ -27,7 +33,6 @@
             float:left;
             width:90px;
             height:60px;
-            
         }
     }
     .contactenos{

@@ -1,36 +1,42 @@
-.tarjetaAlquileres{
-    width:800px;
-    border: outline;
-    padding:20px;
-    background: rgb(65,158,245);
-    background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
-    margin: 50px 60px;
-    border-radius: 10px;
-    box-shadow: $box-shadow;
-        &:hover{
-        background-color: $bg-color-hover ;
-    }
-    @media(max-width:992px){
-            width: 80%;
-    }
-    .tarjetaAlquileres__titulo{
-        text-align: center;
-        font-weight: bold;
-        font-size: $font-titulo;
-        margin-bottom: 30px;
-        text-shadow: $text-shadow;
+/*Tarjeta condiciones de alquiler*/
 
-    }
+.divTarjetaAlquileres {
+    margin:0px;
+    .tarjetaAlquileres{
+        width:800px;
+        border: outline;
+        padding:20px;
+        background: rgb(65,158,245);
+        background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
+        margin: 50px 0px;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+            &:hover{
+            background-color: $bg-color-hover ;
+        }
+        @media(max-width:992px){
+            width: 80%;
+        }
+        .tarjetaAlquileres__titulo{
+            text-align: center;
+            font-weight: bold;
+            font-size: $font-titulo;
+            margin-bottom: 30px;
+            text-shadow: $text-shadow;
+    
+        }
         .tarjetaAlquileres__lista{
             font-size: $font-texto;
             color: black;
             line-height: $interlineado-parrafo;
-            @media (max-width:768px){
-            line-height: 20px;
-        }
+            @media (max-width:576px){
+                line-height: 25px;
             }
-    
+        }
+        
+    }
 }
+
 
 
 

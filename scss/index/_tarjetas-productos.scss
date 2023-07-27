@@ -1,9 +1,11 @@
+/*Tarjetas productos*/
+
 .tituloProductos{
     margin-bottom: 50px;
     font-size: $font-titulo;
     font-weight: bolder;
     text-align: center;
-    text-shadow: $text-shadow;
+    text-shadow: $text-shadow; 
 }
 .tarjetas__productos {
     display: grid;
@@ -11,7 +13,7 @@
     justify-items: center;
     @media(max-width:1200px) {
         grid-template-columns: 1fr 1fr;
-        } 
+    } 
     @media(max-width:768px){
         grid-template-columns: 1fr;
     }

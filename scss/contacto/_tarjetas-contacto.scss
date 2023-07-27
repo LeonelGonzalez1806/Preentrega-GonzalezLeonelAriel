@@ -1,3 +1,4 @@
+/*Tarjetas contacto*/
 .divTarjetasContacto{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,9 +7,7 @@
     justify-items: center;
     @media(max-width:992px){
         grid-template-columns: 1fr;
-        margin: 20px 0px ;
-
-        
+        margin: 20px 0px; 
     }
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
@@ -16,6 +17,7 @@
   align-items: center;
 }
 
+/*Navegador*/
 .barraNav {
   background-color: #20619e;
   width: 100%;
@@ -60,7 +62,7 @@
 @media (max-width: 992px) {
   .barraNav ul {
     position: fixed;
-    background-color: black;
+    background-color: rgb(75, 74, 74);
     border-radius: 10px;
     width: 75vw;
     height: 100vh;
@@ -98,6 +100,7 @@
   color: #f15516;
 }
 
+/*Boton flotante Whatsapp*/
 .botonFlotante {
   position: fixed;
   width: 80px;
@@ -126,6 +129,7 @@
   }
 }
 
+/*Portadas*/
 .portadaInicio {
   background-image: url(../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
 }
@@ -230,6 +234,7 @@
   text-shadow: 2px 2px 2px #000000;
 }
 
+/*Parrafo principal index*/
 .inicioParrafo {
   margin: 30px 60px 30px 50px;
   padding: 20px 0px 20px 25px;
@@ -247,12 +252,13 @@
   font-weight: bold;
 }
 
+/*Tarjetas productos*/
 .tituloProductos {
   margin-bottom: 50px;
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 
 .tarjetas__productos {
@@ -271,6 +277,7 @@
   }
 }
 
+/*Tarjeta de cada producto*/
 .tarjetaProductos {
   width: 250px;
   border: groove 4px #20619e;
@@ -297,11 +304,13 @@
   text-align: center;
   font-weight: bold;
   font-size: 18px;
+  margin: 10px 0px 5px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 .tarjetaProductos p {
   font-size: 12px;
   color: rgb(100, 100, 100);
-  margin: 10px 0px 30px;
+  margin: 10px 0px 20px;
 }
 .tarjetaProductos button {
   background-color: #f15516;
@@ -321,6 +330,7 @@
   color: black;
 }
 
+/*Email novedades*/
 .divNovedades {
   display: flex;
   flex-wrap: wrap;
@@ -377,6 +387,7 @@
   }
 }
 
+/*Footer*/
 .footer {
   background-color: #20619e;
   display: grid;
@@ -450,79 +461,87 @@
   color: white;
 }
 
-.tarjetaAlquileres {
+/*Tarjeta condiciones de alquiler*/
+.divTarjetaAlquileres {
+  margin: 0px;
+}
+.divTarjetaAlquileres .tarjetaAlquileres {
   width: 800px;
   border: outline;
   padding: 20px;
   background: rgb(65, 158, 245);
   background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
-  margin: 50px 60px;
+  margin: 50px 0px;
   border-radius: 10px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
-.tarjetaAlquileres:hover {
+.divTarjetaAlquileres .tarjetaAlquileres:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
 @media (max-width: 992px) {
-  .tarjetaAlquileres {
+  .divTarjetaAlquileres .tarjetaAlquileres {
     width: 80%;
   }
 }
-.tarjetaAlquileres .tarjetaAlquileres__titulo {
+.divTarjetaAlquileres .tarjetaAlquileres .tarjetaAlquileres__titulo {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 30px;
-  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
-.tarjetaAlquileres .tarjetaAlquileres__lista {
+.divTarjetaAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
   font-size: 16px;
   color: black;
-  line-height: 40px;
+  line-height: 35px;
 }
-@media (max-width: 768px) {
-  .tarjetaAlquileres .tarjetaAlquileres__lista {
-    line-height: 20px;
+@media (max-width: 576px) {
+  .divTarjetaAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
+    line-height: 25px;
   }
 }
 
+/*Carrousel alquileres*/
 .Carrousel__titulo {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   margin: 40px 0px;
-  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 
 .divCarrousel {
   margin-bottom: 40px;
 }
-
-.carrousel img {
+.divCarrousel .carrousel img {
   height: 500px;
   width: 100%;
   object-fit: cover;
 }
 @media (max-width: 992px) {
-  .carrousel img {
+  .divCarrousel .carrousel img {
     height: 350px;
   }
 }
 @media (max-width: 576px) {
-  .carrousel img {
+  .divCarrousel .carrousel img {
     height: 250px;
   }
 }
-.carrousel h5 {
+.divCarrousel .carrousel .carrousel__texto h5 {
   font-size: 40px;
   text-shadow: 2px 2px 2px #000000;
 }
-.carrousel p {
+.divCarrousel .carrousel .carrousel__texto p {
   font-size: 25px;
   text-shadow: 2px 2px 2px #000000;
 }
 
-.tarjetaNosotros {
+/*Tarjeta "¿Quienes somos?" nosotros*/
+.divTarjetaNosotros {
+  margin: 0px;
+}
+.divTarjetaNosotros .tarjetaNosotros {
   width: 800px;
   border: outline;
   background: rgb(241, 85, 22);
@@ -530,53 +549,51 @@
   border-radius: 10px;
   font-size: 18px;
   padding: 30px;
-  margin: 50px;
+  margin: 50px 0px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
-.tarjetaNosotros:hover {
+.divTarjetaNosotros .tarjetaNosotros:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
 @media (max-width: 992px) {
-  .tarjetaNosotros {
+  .divTarjetaNosotros .tarjetaNosotros {
     width: 80%;
   }
 }
 @media (max-width: 576px) {
-  .tarjetaNosotros {
+  .divTarjetaNosotros .tarjetaNosotros {
     padding: 20px;
   }
 }
-.tarjetaNosotros .tarjetaNosotros__titulo {
+.divTarjetaNosotros .tarjetaNosotros .tarjetaNosotros__titulo {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
-  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
-@media (max-width: 768px) {
-  .tarjetaNosotros .tarjetaNosotros__titulo {
-    font-size: 20px;
-  }
-}
-.tarjetaNosotros .tarjetaNosotros__Parrafo {
-  line-height: 40px;
+.divTarjetaNosotros .tarjetaNosotros .tarjetaNosotros__Parrafo {
+  line-height: 35px;
+  font-size: 16px;
 }
 @media (max-width: 576px) {
-  .tarjetaNosotros .tarjetaNosotros__Parrafo {
-    line-height: 20px;
+  .divTarjetaNosotros .tarjetaNosotros .tarjetaNosotros__Parrafo {
+    line-height: 25px;
   }
 }
-.tarjetaNosotros .tarjetaNosotros__Punteo {
+.divTarjetaNosotros .tarjetaNosotros .tarjetaNosotros__Punteo {
   list-style: inside;
-  line-height: 40px;
+  line-height: 35px;
+  font-size: 16px;
 }
-@media (max-width: 768px) {
-  .tarjetaNosotros .tarjetaNosotros__Punteo {
+@media (max-width: 576px) {
+  .divTarjetaNosotros .tarjetaNosotros .tarjetaNosotros__Punteo {
     list-style: disc;
-    line-height: 20px;
+    line-height: 30px;
   }
 }
 
+/*Imagen Nosotros*/
 .fotoNosotros {
   width: 100%;
   height: 500px;
@@ -594,6 +611,7 @@
   }
 }
 
+/*Tarjetas contacto*/
 .divTarjetasContacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -608,6 +626,7 @@
   }
 }
 
+/*Tarjeta datos de contacto*/
 .datosContacto {
   width: 500px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
@@ -635,7 +654,7 @@
   font-size: 30px;
   padding: 10px 0px;
   text-align: center;
-  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 @media (max-width: 576px) {
   .datosContacto .datosContacto__titulo {
@@ -668,13 +687,14 @@
   }
 }
 
+/*Tarjeta formulario contacto*/
 .tarjetaConsulta {
   display: inline-block;
   border: outline;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
   background: rgb(241, 85, 22);
   background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
-  margin: 15px 50px;
+  margin: 15px 0px;
   padding: 10px;
   width: 500px;
   border-radius: 10px;
@@ -690,7 +710,6 @@
 @media (max-width: 992px) {
   .tarjetaConsulta {
     width: 80%;
-    margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -704,7 +723,7 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 25px;
-  text-shadow: 0px 7px 15px rgba(255, 255, 255, 0.91);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 .tarjetaConsulta .formulario {
   display: grid;
@@ -736,7 +755,7 @@
   text-align: justify;
   border-bottom: 1px solid #f15516;
   padding: 5px;
-  cursor: pointer;
+  cursor: text;
   width: 90%;
   padding-top: 15px;
 }

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import "reset";
-@import "variables";
-@import "extends";
-@import "mixins";
+@import "./_reset-variables-mixins-extends.scss/reset";
+@import "./_reset-variables-mixins-extends.scss/variables";
+@import "./_reset-variables-mixins-extends.scss/extends";
+@import "./_reset-variables-mixins-extends.scss/mixins";
 @import "./nav-portadas-footer-botonwsp/navegador";
 @import "./nav-portadas-footer-botonwsp/boton-flotante-whatsapp";
 @import "./nav-portadas-footer-botonwsp/portadas";
@@ -14,7 +14,7 @@
 @import "./alquileres/tarjeta-alquileres";
 @import "./alquileres/carrousel-alquileres";
 @import "./nosotros/tarjeta-nosotros";
-@import "./nosotros/collage-nosotros";
+@import "./nosotros/foto-nosotros";
 @import "./contacto/tarjetas-contacto.scss";
 @import "./contacto/tarjeta-datos-contacto";
 @import "./contacto/tarjeta-formulario";

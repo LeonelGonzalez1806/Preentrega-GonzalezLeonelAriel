@@ -1,3 +1,5 @@
+/*Tarjeta datos de contacto*/
+
 .datosContacto{
     width: 500px;
     box-shadow: $box-shadow;
@@ -10,10 +12,10 @@
         background-color: $bg-color-hover;
     }
     @media(max-width:1200px){
-            width:40vw;  
+        width:40vw;  
     }
     @media(max-width:992px){
-            width:80%;
+        width:80%;
     }
     .datosContacto__titulo{
         font-weight: bold;
@@ -23,15 +25,15 @@
         text-shadow: $text-shadow;
         @media(max-width:576px){
                 font-size: 20px;
-            }
+        }
     }
     ul li{
         padding: 20px 15px 20px 0px;
         list-style: inside;
         font-size: $font-texto;
         span{
-            font-weight: bold;
-            }
+                font-weight: bold;
+        }
     }
     iframe {
         margin:20px;
