@@ -1,21 +1,23 @@
 /*Tarjeta condiciones de alquiler*/
 
-.divTarjetaAlquileres {
+.divTarjetasAlquileres {
     margin:0px;
+    padding: 0px;
     .tarjetaAlquileres{
-        width:800px;
+        width:600px;
         border: outline;
         padding:20px;
         background: rgb(65,158,245);
         background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
-        margin: 50px 0px;
+        margin: 50px 30px 50px 10px;
         border-radius: 10px;
         box-shadow: $box-shadow;
             &:hover{
             background-color: $bg-color-hover ;
         }
-        @media(max-width:992px){
-            width: 80%;
+        @media (max-width: 1200px){
+            margin: 50px 0px;
+            width:80%;
         }
         .tarjetaAlquileres__titulo{
             text-align: center;
@@ -30,12 +32,13 @@
             color: black;
             line-height: $interlineado-parrafo;
             @media (max-width:576px){
-                line-height: 25px;
+                line-height: 30px;
             }
         }
         
     }
 }
+
 
 
 

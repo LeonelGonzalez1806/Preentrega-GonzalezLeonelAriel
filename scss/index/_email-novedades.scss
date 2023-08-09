@@ -4,8 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 15px;
     .emailNovedades{
-        width: 600px;
+        width: 800px;
         text-align: center;
         font-size: 14px;
         border: solid 1px $bg-color;
@@ -16,6 +17,9 @@
         outline: none;
         &:hover{
             border: 1px solid $color;
+        }
+        @media(max-width:992px){
+            width:600px;
         }
         @media(max-width:768px){
             width:400px;
@@ -31,7 +35,7 @@
         @media(max-width:576px){
             width:90vw;
             margin: 0px;
-            margin-bottom: 30px; 
+            margin-bottom: 10px; 
         }
     }
 }

@@ -12,7 +12,7 @@
     margin: 10px 15px 30px;
     transition: 0.2s;
     &:hover{
-        background-color: $bg-color-hover ;
+        background-color: $bg-color-hover;
     }
     img{
         width: 200px;
@@ -26,7 +26,6 @@
         font-weight: bold;
         font-size: 18px;
         margin: 10px 0px 5px;
-        text-shadow: $text-shadow; 
     }
     p{
         font-size: 12px;

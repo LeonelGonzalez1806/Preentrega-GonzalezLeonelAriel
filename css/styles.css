@@ -17,6 +17,15 @@
   align-items: center;
 }
 
+.div__fotosNosotros .fotoNosotros, .divFotosAlquileres .fotoAlquileres {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  padding: 0px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 /*Navegador*/
 .barraNav {
   background-color: #20619e;
@@ -305,7 +314,6 @@
   font-weight: bold;
   font-size: 18px;
   margin: 10px 0px 5px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 .tarjetaProductos p {
   font-size: 12px;
@@ -335,9 +343,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 15px;
 }
 .divNovedades .emailNovedades {
-  width: 600px;
+  width: 800px;
   text-align: center;
   font-size: 14px;
   border: solid 1px #20619e;
@@ -349,6 +358,11 @@
 }
 .divNovedades .emailNovedades:hover {
   border: 1px solid #f15516;
+}
+@media (max-width: 992px) {
+  .divNovedades .emailNovedades {
+    width: 600px;
+  }
 }
 @media (max-width: 768px) {
   .divNovedades .emailNovedades {
@@ -383,7 +397,7 @@
   .divNovedades .botonEmailNovedades {
     width: 90vw;
     margin: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -462,42 +476,73 @@
 }
 
 /*Tarjeta condiciones de alquiler*/
-.divTarjetaAlquileres {
+.divTarjetasAlquileres {
   margin: 0px;
+  padding: 0px;
 }
-.divTarjetaAlquileres .tarjetaAlquileres {
-  width: 800px;
+.divTarjetasAlquileres .tarjetaAlquileres {
+  width: 600px;
   border: outline;
   padding: 20px;
   background: rgb(65, 158, 245);
   background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
-  margin: 50px 0px;
+  margin: 50px 30px 50px 10px;
   border-radius: 10px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
-.divTarjetaAlquileres .tarjetaAlquileres:hover {
+.divTarjetasAlquileres .tarjetaAlquileres:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
-@media (max-width: 992px) {
-  .divTarjetaAlquileres .tarjetaAlquileres {
+@media (max-width: 1200px) {
+  .divTarjetasAlquileres .tarjetaAlquileres {
+    margin: 50px 0px;
     width: 80%;
   }
 }
-.divTarjetaAlquileres .tarjetaAlquileres .tarjetaAlquileres__titulo {
+.divTarjetasAlquileres .tarjetaAlquileres .tarjetaAlquileres__titulo {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 30px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
-.divTarjetaAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
+.divTarjetasAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
   font-size: 16px;
   color: black;
   line-height: 35px;
 }
 @media (max-width: 576px) {
-  .divTarjetaAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
-    line-height: 25px;
+  .divTarjetasAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
+    line-height: 30px;
+  }
+}
+
+.divFotosAlquileres {
+  width: 500px;
+  margin: 50px 10px;
+}
+@media (max-width: 1200px) {
+  .divFotosAlquileres {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .divFotosAlquileres {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .divFotosAlquileres .fotoAlquileres {
+    margin: 0px 0px 30px 0px;
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .divFotosAlquileres .fotoAlquileres {
+    height: 200px;
   }
 }
 
@@ -506,16 +551,18 @@
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  margin: 40px 0px;
+  margin: 20px 0px 30px 0px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
 
 .divCarrousel {
   margin-bottom: 40px;
+  padding: 0px;
 }
 .divCarrousel .carrousel img {
   height: 500px;
   width: 100%;
+  border-radius: 10px;
   object-fit: cover;
 }
 @media (max-width: 992px) {
@@ -540,23 +587,31 @@
 /*Tarjeta "¿Quienes somos?" nosotros*/
 .divTarjetaNosotros {
   margin: 0px;
+  padding: 0px;
+}
+@media (max-width: 1200px) {
+  .divTarjetaNosotros {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .divTarjetaNosotros .tarjetaNosotros {
-  width: 800px;
+  width: 600px;
   border: outline;
   background: rgb(241, 85, 22);
   background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
   border-radius: 10px;
   font-size: 18px;
   padding: 30px;
-  margin: 50px 0px;
+  margin: 50px 30px 50px 10px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
 .divTarjetaNosotros .tarjetaNosotros:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .divTarjetaNosotros .tarjetaNosotros {
+    margin: 50px 0px;
     width: 80%;
   }
 }
@@ -598,20 +653,32 @@
 }
 
 /*Imagen Nosotros*/
-.fotoNosotros {
-  width: 100%;
-  height: 500px;
-  margin: 20px 0px 40px;
-  object-fit: cover;
+.div__fotosNosotros {
+  width: 500px;
+  margin: 50px 10px;
 }
-@media (max-width: 768px) {
-  .fotoNosotros {
-    height: 350px;
+@media (max-width: 1200px) {
+  .div__fotosNosotros {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
-  .fotoNosotros {
-    height: 250px;
+  .div__fotosNosotros {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .div__fotosNosotros .fotoNosotros {
+    margin: 0px 0px 30px 0px;
+    width: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .div__fotosNosotros .fotoNosotros {
+    height: 200px;
   }
 }
 

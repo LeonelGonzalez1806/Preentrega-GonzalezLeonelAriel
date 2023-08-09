@@ -1,21 +1,27 @@
 /*Tarjeta "¿Quienes somos?" nosotros*/
 
 .divTarjetaNosotros {
-    margin:0px;
+    margin: 0px;
+    padding: 0px;
+    @media (max-width: 1200px){
+        flex-direction: column;
+        align-items: center;
+    }
     .tarjetaNosotros {
-        width: 800px;
+        width: 600px;
         border: outline;
         background: rgb(241,85,22);
         background: radial-gradient(circle, rgba(241, 84, 22, 0.623) 0%, rgba(65, 158, 245, 0.521) 100%);
         border-radius: 10px;
         font-size: 18px;
         padding: 30px;
-        margin: 50px 0px;
+        margin: 50px 30px 50px 10px;
         box-shadow: $box-shadow;
         &:hover{
             background-color: $bg-color-hover;
         }
-        @media(max-width:992px){
+        @media (max-width: 1200px){
+            margin: 50px 0px;
             width:80%;
         }
         @media(max-width:576px){
