@@ -93,6 +93,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
   padding: 0px 20px;
   transition: 0.4s;
 }
@@ -135,6 +136,7 @@
     height: 50px;
     line-height: 50px;
     font-size: 35px;
+    left: 40px;
   }
 }
 
@@ -352,7 +354,7 @@
   border: solid 1px #20619e;
   border-radius: 5px;
   height: 35px;
-  margin: 25px 5px 30px 0px;
+  margin: 25px 5px 25px 0px;
   padding: 5px;
   outline: none;
 }
@@ -562,7 +564,6 @@
 .divCarrousel .carrousel img {
   height: 500px;
   width: 100%;
-  border-radius: 10px;
   object-fit: cover;
 }
 @media (max-width: 992px) {
@@ -575,7 +576,7 @@
     height: 250px;
   }
 }
-.divCarrousel .carrousel .carrousel__texto h5 {
+.divCarrousel .carrousel .carrousel__texto h4 {
   font-size: 40px;
   text-shadow: 2px 2px 2px #000000;
 }
@@ -603,7 +604,7 @@
   border-radius: 10px;
   font-size: 18px;
   padding: 30px;
-  margin: 50px 30px 50px 10px;
+  margin: 50px 30px 40px 10px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
 .divTarjetaNosotros .tarjetaNosotros:hover {
