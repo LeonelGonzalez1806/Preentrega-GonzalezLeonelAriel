@@ -761,10 +761,6 @@
   margin: 20px;
   border-radius: 10px;
   width: 400px;
-  display: grid;
-  grid-template-columns: 1fr;
-  flex-wrap: wrap;
-  justify-content: center;
   height: 300px;
 }
 @media (max-width: 1200px) {
