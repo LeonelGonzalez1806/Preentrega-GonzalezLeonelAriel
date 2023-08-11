@@ -85,6 +85,7 @@
   }
   .barraNav ul:hover {
     left: 0px;
+    z-index: 999;
   }
 }
 .barraNav ul li a {
@@ -136,7 +137,8 @@
     height: 50px;
     line-height: 50px;
     font-size: 35px;
-    left: 40px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 
