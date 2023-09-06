@@ -8,15 +8,15 @@ let carrito = 0;
 
 function calcularPrecio(producto) {
   switch (producto.toLowerCase()) {
-    case "Silla de ruedas":
+    case "silla de ruedas":
       return precioSilla;
-    case "Muletas":
+    case "muletas":
       return precioMuletas;
-    case "Bota walker":
+    case "bota walker":
       return precioBotaWalker;
-    case "Baston de madera":
+    case "baston de madera":
       return precioBaston;
-    case "Eleva inodoro":
+    case "eleva inodoro":
       return precioEleva;
     default:
       return 0; 
