@@ -38,7 +38,7 @@ formulario.addEventListener("submit", function (evento) {
 
     // Mostrar el turno en la lista
     const elementoTurno = document.createElement("li");
-    elementoTurno.textContent = `Nombre: ${nombre} - Profesional: ${profesional} - Fecha: ${fecha} - Hora: ${hora}`;
+    elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
     listaTurnos.appendChild(elementoTurno);
 
     // Limpiar el formulario
@@ -52,7 +52,7 @@ const turnosGuardados = JSON.parse(localStorage.getItem("turnos"));
 if (turnosGuardados) {
     turnosGuardados.forEach(function (turno) {
         const elementoTurno = document.createElement("li");
-        elementoTurno.textContent = `Nombre: ${turno.nombre} - Profesional: ${turno.profesional} - Fecha: ${turno.fecha} - Hora: ${turno.hora}`;
+        elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
         listaTurnos.appendChild(elementoTurno);
     });
 }
