@@ -29,25 +29,56 @@
         </div>
     </header>
     <main>
-        <div class="row justify-content-center divTarjetaNosotros"> 
-            <div class="tarjetaNosotros">
-                <h3 class="tarjetaNosotros__titulo">¿Quienes Somos?</h3>
-                <p class="tarjetaNosotros__Parrafo"> Ortopedia Belgrano, una empresa líder en el sector de productos ortopédicos, inició su trayectoria en 1989 como una tienda familiar. A lo largo de los años, nos hemos ganado la confianza de nuestros clientes, convirtiéndonos en su proveedor confiable de soluciones ortopédicas.</p>
-                <p class="tarjetaNosotros__Parrafo">Actualmente, nos especializamos en diversas áreas para brindar un servicio integral y de calidad:</p>
-                <ul class="tarjetaNosotros__Punteo">
-                    <li><em>Venta y alquiler de productos ortopédicos:</em> Ofrecemos una amplia gama de productos personalizados, desde sillas de ruedas y muletas hasta productos de apoyo y cuidado de la salud.</li>
-                    <li><em>Análisis de la pisada y plantillas ortopédicas:</em> Nuestro equipo altamente capacitado realiza análisis biomecánicos para diseñar plantillas ortopédicas a medida, mejorando la postura y comodidad en cada paso.</li>
-                    <li><em>Reparación de productos ortopédicos:</em> Brindamos un servicio especializado de reparación para sillas de ruedas, muletas, andadores y otros productos, asegurando su durabilidad y funcionalidad.</li>
-                    <li><em>Confección de calzado y prótesis ortopédicas:</em> Ofrecemos servicios personalizados de confección para garantizar que cada producto sea cómodo, funcional y de alta calidad, adaptado a las necesidades únicas de cada individuo.</li>
-                </ul>
-            </div>
-            <div class="div__fotosNosotros">
-                <img class="fotoNosotros" src="../multimedia/img/imagenes-varias/analisis-plantillas.jpg" alt="Ortopedista analizando los pies de un paciente que está parado sobre un par de plantillas.">
-                <img class="fotoNosotros" src="../multimedia/img/imagenes-varias/plantilla-en-zapatilla.jpg" alt="Persona introduciendo una plantilla ortopédica en su calzado.">
-                <img class="fotoNosotros"src="../multimedia/img/imagenes-varias/personas-felices-silla-de-ruedas.jpg" alt="Vista frontal de una silla de ruedas con una pareja sonriendo sentada en el sofa de fondo.">
+    <div class="row justify-content-center divTurnos">
+        <div class= "tarjetaConsulta"> 
+            <h3>Agenda de Turnos</h3>
+            <form id="formulario-turnos">
+            <div class="formulario">
+                <div class="formulario__labinp formulario__nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input class="inputContacto" type="text" id="nombre" required>
+                </div>
+                <div class="formulario__labinp formulario__apellido">
+                    <label for="apellido">Apellido:</label>
+                    <input class="inputContacto" type="text" id="apellido" required>
+                </div>
+                <div class="formulario__labinp formulario__email">
+                    <label for="email">Email:</label>
+                    <input class="inputContacto" type="email" id="email" required>
+                </div>
 
+                <div class="formulario__labinp formulario__tel">
+                    <label for="telefono">Teléfono:</label>
+                    <input class="inputContacto" type="tel" id="telefono" required>
+                </div>
+                <div class="formulario__labinp formulario__email">
+                    <label for="profesional">Profesional:</label>
+                    <select class="inputContactoDif" id="profesional" required>
+                        <option value="Carlos Rivera">Carlos Rivera</option>
+                        <option value="Monica Burke">Monica Burke</option>
+                        <option value="Gabriel Mendez">Gabriel Mendez</option>
+                    </select>
+                </div>
+                <div class="formulario__labinp formulario__email">
+                    <label for="fecha">Fecha:</label>
+                    <input class="inputContactoDif" type="date" id="fecha" required>
+                </div>
+                <div class="formulario__labinp formulario__email">
+                    <label for="hora">Hora:</label>
+                    <input class="inputContactoDif" type="time" id="hora" required>
+                </div>
+
+                <div class="formulario__labinp labinp__solo">
+                    <button class="formulario__boton" type="submit">Agendar turno</button>
+                </div>
             </div>
-        </div>  
+            </form>
+        </div> 
+            <div class="turnosAgendados" id="lista-turnos">
+                <h2>Turnos Agendados</h2>
+                <ul id="turnos"></ul>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="textoFooter descripcion">
@@ -72,6 +103,7 @@
                 </div>
          </div>
     </footer>
+    <script src="../turnos.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
