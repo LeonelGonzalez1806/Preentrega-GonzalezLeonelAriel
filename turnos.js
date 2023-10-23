@@ -21,28 +21,28 @@
 //         fecha,
 //         hora,
 //     };
+    
+//   // Obtener los turnos almacenados en el almacenamiento local
+//   let turnosGuardados = JSON.parse(localStorage.getItem("turnos"));
 
-//     // Obtener los turnos almacenados en el almacenamiento local
-//     let turnosGuardados = JSON.parse(localStorage.getItem("turnos"));
+//   // Verificar si los turnos guardados no existen o son nulos
+//   if (!turnosGuardados) {
+//       turnosGuardados = [];
+//   }
 
-//     // Verificar si los turnos guardados no existen o son nulos
-//     if (!turnosGuardados) {
-//         turnosGuardados = [];
-//     }
+//   // Guardar el nuevo turno
+//   turnosGuardados.push(turno);
 
-//     // Guardar el nuevo turno
-//     turnosGuardados.push(turno);
+//   // Almacenar en el almacenamiento local
+//   localStorage.setItem("turnos", JSON.stringify(turnosGuardados));
 
-//     // Almacenar en el almacenamiento local
-//     localStorage.setItem("turnos", JSON.stringify(turnosGuardados));
+//   // Mostrar el turno en la lista
+//   const elementoTurno = document.createElement("li");
+//   elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
+//   listaTurnos.appendChild(elementoTurno);
 
-//     // Mostrar el turno en la lista
-//     const elementoTurno = document.createElement("li");
-//     elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
-//     listaTurnos.appendChild(elementoTurno);
-
-//     // Limpiar el formulario
-//     formulario.reset();
+//   // Limpiar el formulario
+//   formulario.reset();
 // });
 
 // // Cargar los turnos guardados en el almacenamiento local al cargar la página
@@ -50,15 +50,81 @@
 
 // // Verificar si los turnos guardados no existen o son nulos
 // if (turnosGuardados) {
-//     turnosGuardados.forEach(function (turno) {
-//         const elementoTurno = document.createElement("li");
-//         elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
-//         listaTurnos.appendChild(elementoTurno);
-//     });
+//   turnosGuardados.forEach(function (turno) {
+//       const elementoTurno = document.createElement("li");
+//       elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
+//       listaTurnos.appendChild(elementoTurno);
+//   });
 // }
+//     // Simular una operación asíncrona usando una promesa
+//     const enviarTurno = () => {
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 const exito = true;
+
+//                 if (exito) {
+//                     resolve();
+//                 } else {
+//                     reject(new Error("No se pudo agendar el turno. Por favor, inténtelo de nuevo."));
+//                 }
+//             }, 2000);
+//         });
+//     };
+
+//     // Llamar a la función enviarTurno y manejar el resultado
+//     enviarTurno()
+//         .then(() => {
+//             // Mostrar notificación de éxito con Toastify
+//             Toastify({
+//                 text: "Turno agendado con éxito",
+//                 duration: 3000, 
+//                 close: true,
+//                 gravity: "top",
+//                 position: "right",
+//             }).showToast();
 
 
+//         })
+//         .catch((error) => {
+//             // Manejar errores, por ejemplo, mostrar una notificación de error
+//             Toastify({
+//                 text: error.message, // Mensaje de error de la promesa reject
+//                 duration: 3000,
+//                 close: true,
+//                 gravity: "top",
+//                 position: "right",
+//                 backgroundColor: "red",
+//             }).showToast();
+//         });
+// // Cargar el archivo JSON de manera asíncrona
+// fetch("turnos.json")
+//     .then((response) => {
+//         if (!response.ok) {
+//             throw new Error("No se pudo cargar el archivo JSON.");
+//         }
+//         return response.json();
+//     })
+//     .then((data) => {
+//         // Manejar los datos del archivo JSON (en este caso, agregarlos a la lista de turnos)
+//         const listaTurnos = document.getElementById("lista-turnos");
 
+//         data.forEach((turno) => {
+//             const elementoTurno = document.createElement("li");
+//             elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
+//             listaTurnos.appendChild(elementoTurno);
+//         });
+//     })
+//     .catch((error) => {
+//         // Manejar errores, por ejemplo, mostrar una notificación de error
+//         Toastify({
+//             text: error.message,
+//             duration: 3000,
+//             close: true,
+//             gravity: "top",
+//             position: "right",
+//             backgroundColor: "red",
+//         }).showToast();
+//     });
 
 
 const formulario = document.getElementById("formulario-turnos");
@@ -84,41 +150,16 @@ formulario.addEventListener("submit", function (evento) {
         fecha,
         hora,
     };
-    
-  // Obtener los turnos almacenados en el almacenamiento local
-  let turnosGuardados = JSON.parse(localStorage.getItem("turnos"));
 
-  // Verificar si los turnos guardados no existen o son nulos
-  if (!turnosGuardados) {
-      turnosGuardados = [];
-  }
+    // Obtén los turnos anteriores del almacenamiento local (si los hay)
+    let turnosGuardados = JSON.parse(localStorage.getItem("turnos")) || [];
 
-  // Guardar el nuevo turno
-  turnosGuardados.push(turno);
+    // Agrega el nuevo turno a la lista de turnos guardados
+    turnosGuardados.push(turno);
 
-  // Almacenar en el almacenamiento local
-  localStorage.setItem("turnos", JSON.stringify(turnosGuardados));
+    // Guarda la lista actualizada en el almacenamiento local
+    localStorage.setItem("turnos", JSON.stringify(turnosGuardados));
 
-  // Mostrar el turno en la lista
-  const elementoTurno = document.createElement("li");
-  elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
-  listaTurnos.appendChild(elementoTurno);
-
-  // Limpiar el formulario
-  formulario.reset();
-});
-
-// Cargar los turnos guardados en el almacenamiento local al cargar la página
-const turnosGuardados = JSON.parse(localStorage.getItem("turnos"));
-
-// Verificar si los turnos guardados no existen o son nulos
-if (turnosGuardados) {
-  turnosGuardados.forEach(function (turno) {
-      const elementoTurno = document.createElement("li");
-      elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
-      listaTurnos.appendChild(elementoTurno);
-  });
-}
     // Simular una operación asíncrona (por ejemplo, una solicitud HTTP) usando una promesa
     const enviarTurno = () => {
         return new Promise((resolve, reject) => {
@@ -150,7 +191,13 @@ if (turnosGuardados) {
                 position: "right", // Posición en la dirección especificada
             }).showToast();
 
+            // Mostrar el turno en la lista
+            const elementoTurno = document.createElement("li");
+            elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
+            listaTurnos.appendChild(elementoTurno);
 
+            // Limpiar el formulario
+            formulario.reset();
         })
         .catch((error) => {
             // Manejar errores, por ejemplo, mostrar una notificación de error
@@ -163,6 +210,7 @@ if (turnosGuardados) {
                 backgroundColor: "red",
             }).showToast();
         });
+});
 // Cargar el archivo JSON de manera asíncrona
 fetch("turnos.json")
     .then((response) => {
@@ -172,10 +220,16 @@ fetch("turnos.json")
         return response.json();
     })
     .then((data) => {
-        // Manejar los datos del archivo JSON (en este caso, agregarlos a la lista de turnos)
+        // Obtén los turnos guardados del almacenamiento local
+        const turnosGuardados = JSON.parse(localStorage.getItem("turnos")) || [];
+
+        // Combinar los turnos cargados desde el JSON con los guardados localmente
+        const todosLosTurnos = [...data, ...turnosGuardados];
+
+        // Manejar los datos de todos los turnos (agregarlos a la lista de turnos)
         const listaTurnos = document.getElementById("lista-turnos");
 
-        data.forEach((turno) => {
+        todosLosTurnos.forEach((turno) => {
             const elementoTurno = document.createElement("li");
             elementoTurno.innerHTML = `<strong>Nombre:</strong> ${turno.nombre} - <strong>Apellido:</strong> ${turno.apellido} - <strong>Email:</strong> ${turno.email} - <strong>Teléfono:</strong> ${turno.telefono} - <strong>Profesional:</strong> ${turno.profesional} - <strong>Fecha:</strong> ${turno.fecha} - <strong>Hora:</strong> ${turno.hora}`;
             listaTurnos.appendChild(elementoTurno);
@@ -195,6 +249,4 @@ fetch("turnos.json")
 
 
 
-
-
-
+ff
