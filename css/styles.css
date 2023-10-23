@@ -38,6 +38,7 @@
   top: 0;
   z-index: 100;
 }
+
 @media (max-width: 1200px) {
   .barraNav {
     position: static;
@@ -46,9 +47,11 @@
 .barraNav .imagenNav {
   width: 100px;
 }
+
 .barraNav .barraNav__menu {
   display: none;
 }
+
 @media (max-width: 992px) {
   .barraNav .barraNav__menu {
     display: block;
@@ -68,6 +71,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 @media (max-width: 992px) {
   .barraNav ul {
     position: fixed;
@@ -98,10 +102,12 @@
   padding: 0px 20px;
   transition: 0.4s;
 }
+
 .barraNav ul li a:hover {
   color: #f15516;
   text-shadow: none;
 }
+
 @media (max-width: 992px) {
   .barraNav ul li a {
     color: white;
@@ -127,10 +133,12 @@
   box-shadow: 0px 1px 10px black;
   z-index: 100;
 }
+
 .botonFlotante:hover {
   background-color: white;
   color: #0df053;
 }
+
 @media (max-width: 768px) {
   .botonFlotante {
     width: 50px;
@@ -141,11 +149,11 @@
     bottom: 20px;
   }
 }
-
 /*Portadas*/
 .portadaInicio {
   background-image: url(../multimedia/img/portadas/sala-silla-de-ruedas.jpg);
 }
+
 @media (max-width: 1200px) {
   .portadaInicio {
     margin-top: 0px;
@@ -172,6 +180,7 @@
 .portadaAlquileres {
   background-image: url(../multimedia/img/portadas/hombre-mujer-rio.jpg);
 }
+
 @media (max-width: 1200px) {
   .portadaAlquileres {
     margin-top: 0px;
@@ -198,6 +207,7 @@
 .portadaNosotros {
   background-image: url(../multimedia/img/portadas/persona-discapacitada-muleta.jpg);
 }
+
 @media (max-width: 1200px) {
   .portadaNosotros {
     margin-top: 0px;
@@ -224,6 +234,7 @@
 .portadaContacto {
   background-image: url(../multimedia/img/portadas/mujer-rodillera.jpg);
 }
+
 @media (max-width: 1200px) {
   .portadaContacto {
     margin-top: 0px;
@@ -254,6 +265,7 @@
   font-size: 16px;
   line-height: 35px;
 }
+
 @media (max-width: 768px) {
   .inicioParrafo {
     padding: 20px 0px;
@@ -279,6 +291,7 @@
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
+
 @media (max-width: 1200px) {
   .tarjetas__productos {
     grid-template-columns: 1fr 1fr;
@@ -289,7 +302,6 @@
     grid-template-columns: 1fr;
   }
 }
-
 /*Tarjeta de cada producto*/
 .tarjetaProductos {
   width: 250px;
@@ -303,9 +315,11 @@
   margin: 10px 15px 30px;
   transition: 0.2s;
 }
+
 .tarjetaProductos:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
+
 .tarjetaProductos img {
   width: 200px;
   height: 200px;
@@ -313,17 +327,20 @@
   align-self: center;
   cursor: pointer;
 }
+
 .tarjetaProductos span {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
   margin: 10px 0px 5px;
 }
+
 .tarjetaProductos p {
   font-size: 12px;
   color: rgb(100, 100, 100);
   margin: 10px 0px 20px;
 }
+
 .tarjetaProductos button {
   background-color: #f15516;
   color: white;
@@ -338,6 +355,7 @@
   margin: 5px 0px;
   padding: none;
 }
+
 .tarjetaProductos button:hover, .tarjetaProductos button:focus {
   color: black;
 }
@@ -349,6 +367,7 @@
   justify-content: center;
   margin: 15px;
 }
+
 .divNovedades .emailNovedades {
   width: 800px;
   text-align: center;
@@ -360,9 +379,11 @@
   padding: 5px;
   outline: none;
 }
+
 .divNovedades .emailNovedades:hover {
   border: 1px solid #f15516;
 }
+
 @media (max-width: 992px) {
   .divNovedades .emailNovedades {
     width: 600px;
@@ -394,9 +415,11 @@
   margin: 0px 5px;
   padding: 10px;
 }
+
 .divNovedades .botonEmailNovedades:hover, .divNovedades .botonEmailNovedades:focus {
   color: black;
 }
+
 @media (max-width: 576px) {
   .divNovedades .botonEmailNovedades {
     width: 90vw;
@@ -404,7 +427,6 @@
     margin-bottom: 10px;
   }
 }
-
 /*Footer*/
 .footer {
   background-color: #20619e;
@@ -413,6 +435,7 @@
   gap: 30px;
   align-items: center;
 }
+
 @media (max-width: 1200px) {
   .footer {
     grid-template-columns: 1fr 1fr;
@@ -422,6 +445,7 @@
   margin: 10px;
   color: aliceblue;
 }
+
 @media (max-width: 768px) {
   .footer .textoFooter {
     grid-column: 1/3;
@@ -434,37 +458,46 @@
   margin-top: 10px;
   font-weight: bold;
 }
+
 .footer .descripcion {
   padding: 0px 30px;
 }
+
 .footer .descripcion .logoFooter {
   float: left;
   width: 90px;
   height: 60px;
 }
+
 .footer .contactenos {
   align-self: start;
 }
+
 .footer .contactenos span {
   display: grid;
   justify-content: center;
   grid-template-rows: 10px 10px 10px 10px;
 }
+
 .footer .redes {
   align-self: start;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer .redes .facebook {
   color: #1877f2;
 }
+
 .footer .redes .instagram {
   color: #d6249f;
 }
+
 .footer .redes .gmail {
   color: #f54236;
 }
+
 @media (max-width: 1200px) {
   .footer .redes {
     grid-column: 1/3;
@@ -480,6 +513,7 @@
   color: white;
   padding: 25px;
 }
+
 .footer .redes i:hover {
   color: white;
 }
@@ -489,6 +523,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 .divTarjetasAlquileres .tarjetaAlquileres {
   width: 600px;
   border: outline;
@@ -499,9 +534,11 @@
   border-radius: 10px;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
 }
+
 .divTarjetasAlquileres .tarjetaAlquileres:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
+
 @media (max-width: 1200px) {
   .divTarjetasAlquileres .tarjetaAlquileres {
     margin: 50px 0px;
@@ -520,21 +557,23 @@
   margin-bottom: 30px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
+
 .divTarjetasAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
   font-size: 16px;
   color: black;
   line-height: 35px;
 }
+
 @media (max-width: 576px) {
   .divTarjetasAlquileres .tarjetaAlquileres .tarjetaAlquileres__lista {
     line-height: 30px;
   }
 }
-
 .divFotosAlquileres {
   width: 500px;
   margin: 50px 10px;
 }
+
 @media (max-width: 1200px) {
   .divFotosAlquileres {
     width: 100%;
@@ -559,7 +598,6 @@
     height: 200px;
   }
 }
-
 /*Carrousel alquileres*/
 .Carrousel__titulo {
   text-align: center;
@@ -573,11 +611,13 @@
   margin-bottom: 40px;
   padding: 0px;
 }
+
 .divCarrousel .carrousel img {
   height: 500px;
   width: 100%;
   object-fit: cover;
 }
+
 @media (max-width: 992px) {
   .divCarrousel .carrousel img {
     height: 350px;
@@ -592,6 +632,7 @@
   font-size: 40px;
   text-shadow: 2px 2px 2px #000000;
 }
+
 .divCarrousel .carrousel .carrousel__texto p {
   font-size: 25px;
   text-shadow: 2px 2px 2px #000000;
@@ -599,7 +640,7 @@
 
 /*Tarjeta "¿Quienes somos?" nosotros*/
 .divTurnos {
-  margin: 30px 0px 50px 0px;
+  margin-bottom: 30px;
 }
 
 .tarjetaConsulta {
@@ -615,9 +656,11 @@
   width: 500px;
   border-radius: 10px;
 }
+
 .tarjetaConsulta:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
+
 @media (max-width: 1200px) {
   .tarjetaConsulta {
     width: 40vw;
@@ -641,6 +684,7 @@
   margin-bottom: 25px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
+
 .tarjetaConsulta .formulario {
   display: flex;
   flex-direction: column;
@@ -650,6 +694,7 @@
   font-size: 16px;
   padding: 10px;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario {
     text-align: center;
@@ -660,6 +705,7 @@
 .tarjetaConsulta .formulario .formulario__labinp label {
   padding: 0px 5px;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .formulario__labinp label {
     padding: 0px 30px;
@@ -676,10 +722,12 @@
   width: 90%;
   padding-top: 15px;
 }
+
 .tarjetaConsulta .formulario .formulario__labinp .inputContacto:focus, .tarjetaConsulta .formulario .formulario__labinp .inputContacto:hover {
   outline: none;
   border-bottom: 2px solid #fa0909;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .formulario__labinp .inputContacto {
     width: 90%;
@@ -697,10 +745,12 @@
   width: 90%;
   padding-top: 15px;
 }
+
 .tarjetaConsulta .formulario .formulario__labinp .inputContactoDif:focus, .tarjetaConsulta .formulario .formulario__labinp .inputContactoDif:hover {
   outline: none;
   border-bottom: 2px solid #fa0909;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .formulario__labinp .inputContactoDif {
     width: 90%;
@@ -721,6 +771,7 @@
   margin: 20px 0px;
   padding: 3px 0px;
 }
+
 .tarjetaConsulta .formulario .formulario__boton:hover, .tarjetaConsulta .formulario .formulario__boton:focus {
   color: black;
 }
@@ -730,13 +781,11 @@
   flex-direction: column;
   align-items: center;
 }
+
 .turnosAgendados h2 {
   font-weight: bold;
   font-size: 30px;
   margin: 20px;
-}
-.turnosAgendados ul {
-  font-size: 16px;
 }
 
 /*Imagen Nosotros*/
@@ -744,6 +793,7 @@
   width: 500px;
   margin: 50px 10px;
 }
+
 @media (max-width: 1200px) {
   .div__fotosNosotros {
     width: 100%;
@@ -768,7 +818,6 @@
     height: 200px;
   }
 }
-
 /*Tarjetas contacto*/
 .divTarjetasContacto {
   display: grid;
@@ -777,13 +826,13 @@
   margin: 30px 0px;
   justify-items: center;
 }
+
 @media (max-width: 992px) {
   .divTarjetasContacto {
     grid-template-columns: 1fr;
     margin: 20px 0px;
   }
 }
-
 /*Tarjeta datos de contacto*/
 .datosContacto {
   width: 500px;
@@ -798,9 +847,11 @@
   background: radial-gradient(circle, rgba(65, 158, 245, 0.521) 0%, rgba(241, 84, 22, 0.623) 100%);
   border-radius: 10px;
 }
+
 .datosContacto:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
+
 @media (max-width: 1200px) {
   .datosContacto {
     width: 40vw;
@@ -818,6 +869,7 @@
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
+
 @media (max-width: 576px) {
   .datosContacto .datosContacto__titulo {
     font-size: 20px;
@@ -828,15 +880,18 @@
   list-style: inside;
   font-size: 16px;
 }
+
 .datosContacto ul li span {
   font-weight: bold;
 }
+
 .datosContacto iframe {
   margin: 20px;
   border-radius: 10px;
   width: 400px;
   height: 300px;
 }
+
 @media (max-width: 1200px) {
   .datosContacto iframe {
     width: 80%;
@@ -849,7 +904,6 @@
     height: 300px;
   }
 }
-
 /*Tarjeta formulario contacto*/
 .tarjetaConsulta {
   display: inline-block;
@@ -862,9 +916,11 @@
   width: 500px;
   border-radius: 10px;
 }
+
 .tarjetaConsulta:hover {
   background-color: rgba(65, 63, 63, 0.1568627451);
 }
+
 @media (max-width: 1200px) {
   .tarjetaConsulta {
     width: 40vw;
@@ -888,6 +944,7 @@
   margin-bottom: 25px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3137254902);
 }
+
 .tarjetaConsulta .formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -896,6 +953,7 @@
   font-size: 16px;
   padding: 10px;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario {
     text-align: center;
@@ -906,6 +964,7 @@
 .tarjetaConsulta .formulario .formulario__labinp label {
   padding: 0px 5px;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .formulario__labinp label {
     padding: 0px 30px;
@@ -922,10 +981,12 @@
   width: 90%;
   padding-top: 15px;
 }
+
 .tarjetaConsulta .formulario .formulario__labinp .inputContacto:focus, .tarjetaConsulta .formulario .formulario__labinp .inputContacto:hover {
   outline: none;
   border-bottom: 2px solid #fa0909;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .formulario__labinp .inputContacto {
     width: 90%;
@@ -935,6 +996,7 @@
 .tarjetaConsulta .formulario .labinp__solo {
   grid-column: 1/3;
 }
+
 @media (max-width: 992px) {
   .tarjetaConsulta .formulario .labinp__solo {
     grid-column: 1;
@@ -943,6 +1005,7 @@
 .tarjetaConsulta .formulario .labinp__solo .inputMensaje {
   width: 95%;
 }
+
 .tarjetaConsulta .formulario .labinp__solo .formulario__boton {
   background-color: #f15516;
   color: white;
@@ -957,8 +1020,11 @@
   margin: 20px 0px;
   padding: 3px 0px;
 }
+
 .tarjetaConsulta .formulario .labinp__solo .formulario__boton:hover, .tarjetaConsulta .formulario .labinp__solo .formulario__boton:focus {
   color: black;
 }
+
+
 
 /*# sourceMappingURL=styles.css.map */
