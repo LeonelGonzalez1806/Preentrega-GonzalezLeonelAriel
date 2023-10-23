@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Mario",
+        "apellido": "Mendez",
+        "email": "maritomendecin@gmail.com",
+        "telefono": "1124568743",
+        "profesional": "Carlos Rivera",
+        "fecha": "2023-10-23",
+        "hora": "14:00"
+    },
+    {
+        "nombre": "Julia",
+        "apellido": "Gómez",
+        "email": "juliagoums@hotmail.com",
+        "telefono": "119876543",
+        "profesional": "Monica Burke",
+        "fecha": "2023-10-24",
+        "hora": "15:30"
+    },
+    {
+        "nombre": "Mariana",
+        "apellido": "Martinez",
+        "email": "marianmartinz@gmail.com",
+        "telefono": "119876543",
+        "profesional": "Gabriel Mendez",
+        "fecha": "2023-10-24",
+        "hora": "17:30"
+    }
+]
